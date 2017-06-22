@@ -1,7 +1,1 @@
-export const BREAKPOINTS = {
-  xs: 0,
-  sm: 36,
-  md: 48,
-  lg: 62,
-  xl: 75,
-}
+export const BREAKPOINTS = [0, 36, 48, 62, 75];
