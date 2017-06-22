@@ -4,8 +4,10 @@
   "private": true,
   "homepage": "https://skycoin.github.io/skycoin.net",
   "dependencies": {
+    "grid-styled": "^2.0.0-4",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
+    "react-responsive": "^1.3.0",
     "react-router-dom": "^4.1.1",
     "styled-components": "^2.1.0"
   },
