@@ -1,8 +1,8 @@
 import React from 'react';
 import { render } from 'react-snapshot';
-import App from './App';
+import Home from './components/Home';
 import registerServiceWorker from './registerServiceWorker';
 import './index.css';
 
-render(<App />, document.getElementById('root'));
+render(<Home />, document.getElementById('root'));
 registerServiceWorker();
