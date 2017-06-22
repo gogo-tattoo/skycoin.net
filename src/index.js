@@ -1,8 +1,8 @@
 import React from 'react';
 import { render } from 'react-snapshot';
-import Router from './components/Router';
+import App from './components/App';
 import registerServiceWorker from './registerServiceWorker';
 import './index.css';
 
-render(<Router />, document.getElementById('root'));
+render(<App />, document.getElementById('root'));
 registerServiceWorker();
