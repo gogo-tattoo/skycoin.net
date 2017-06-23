@@ -7,12 +7,12 @@ import Navigation from '../Navigation';
 
 export default () => (
   <Container>
-    <Flex>
-      <Box>
+    <Flex align="center">
+      <Box width={1/3}>
         <Logo />
       </Box>
 
-      <Box>
+      <Box width={2/3}>
         <Navigation />
       </Box>
     </Flex>
