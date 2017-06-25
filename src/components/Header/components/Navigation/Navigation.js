@@ -1,0 +1,65 @@
+import React from 'react';
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+import { FormattedMessage } from 'react-intl';
+import { rem } from 'polished';
+import Hide from 'hidden-styled'
+
+import media from 'utils/media';
+import { SPACE, FONT_SIZES, FONT_FAMILIES } from 'config';
+import Buy from 'components/Buy';
+
+const Navigation = styled.div`
+  font-size: ${rem(FONT_SIZES[1])};
+  padding-top: ${rem(SPACE[4])};
+  text-align: left;
+
+  ${media.sm.css`
+    font-size: ${rem(FONT_SIZES[3])};
+    padding-top: 0;
+    text-align: right;
+  `}
+`;
+
+const StyledLink = styled(Link)`
+  margin-right: ${rem(SPACE[5])};
+  font-family: ${FONT_FAMILIES.mono};
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+
+  ${media.sm.css`
+    margin-right: 0;
+    margin-left: ${rem(SPACE[7])};
+  `}
+
+  ${media.md.css`
+    margin-left: 0;
+    margin-right: ${rem(SPACE[7])};
+  `}
+`;
+
+const InlineHide = Hide.extend`
+  display: inline;
+  color: red;
+`;
+
+export default () => (
+  <Navigation>
+    <StyledLink to="/">
+      <FormattedMessage id="header.navigation.distribution" />
+    </StyledLink>
+
+    <StyledLink to="/">
+      <FormattedMessage id="header.navigation.downloads" />
+    </StyledLink>
+
+    <StyledLink to="/">
+      <FormattedMessage id="header.navigation.blog" />
+    </StyledLink>
+
+    <InlineHide xs sm>
+      <Buy color="white" pill outlined />
+    </InlineHide>
+  </Navigation>
+);
