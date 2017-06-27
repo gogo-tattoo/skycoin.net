@@ -18,7 +18,7 @@ export default () => (
     <Container>
       <Flex align="center" wrap>
         <Box width={[1/1, 1/3]}>
-          <Logo />
+          <Logo white />
         </Box>
 
         <Box width={[1/1, 2/3]}>

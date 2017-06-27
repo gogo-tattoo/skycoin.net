@@ -2,6 +2,7 @@ import styled, { css } from 'styled-components';
 import { rem } from 'polished';
 import { space, width, fontSize, color } from 'styled-system';
 
+import media from 'utils/media';
 import { FONT_FAMILIES } from 'config';
 
 export default styled.p`
@@ -11,6 +12,14 @@ export default styled.p`
   ${width}
 
   font-family: ${FONT_FAMILIES.sans};
-  font-weight: ${props => props.heavy ? 500 : 300};
-  line-height: ${rem(28)};
+  font-weight: ${props => props.heavy ? 500 : 400};
+  line-height: ${rem(24)};
+
+  ${media.sm.css`
+    line-height: ${rem(28)};
+  `}
+
+  a {
+    color: inherit;
+  }
 `;

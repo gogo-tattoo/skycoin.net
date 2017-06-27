@@ -10,7 +10,7 @@ export default styled.a`
   border: 1px solid transparent;
   cursor: pointer;
   line-height: 1;
-  font-weight: 600;
+  font-weight: 700;
 
   border-radius: ${props => props.pill ? BORDER_RADIUS.pill : BORDER_RADIUS.base};
   box-shadow: ${BOX_SHADOWS.base};

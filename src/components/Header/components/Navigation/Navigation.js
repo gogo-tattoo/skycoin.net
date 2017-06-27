@@ -26,7 +26,7 @@ const StyledLink = styled(Link)`
   font-family: ${FONT_FAMILIES.mono};
   color: white;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 700;
 
   ${media.sm.css`
     margin-right: 0;
