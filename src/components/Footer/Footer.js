@@ -21,7 +21,7 @@ export default () => (
             <Email />
           </Text>
 
-          <Text fontSize={[0, 0, 1]} color="gray.8" heavy mb={0}>
+          <Text as="div" fontSize={[0, 0, 1]} color="gray.8" heavy>
             <Languages />
           </Text>
         </Box>

@@ -36,7 +36,7 @@ const List = ({ heading, links }) => (
       <FormattedMessage id={heading} />
     </Heading>
 
-    <Text fontSize={[1, 2, 3]} color="gray.8" mb={0}>
+    <Text as="div" fontSize={[1, 2, 3]} color="gray.8">
       <LinkList>
         {links.map(({ label, href, to, buy }, linkIndex) => (
           <li key={linkIndex}>
