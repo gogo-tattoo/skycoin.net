@@ -76,7 +76,7 @@ export default {
     network: {
       label: 'Digging deeper',
       heading: 'Network Consensus',
-      body: 'Mining represents one of the biggest flaws to crypto assets by centralising large amounts of power into a handful of mining pools. Mining costs cryptocurrency networks tens of millions of dollars every month in electricity costs, processing just seven transactions a second. Skycoin uses a new consensus algorithm, Network Consensus, which requires no mining. ',
+      body: 'By centralising large amounts of power into a handful of mining pools, mining represents one of the biggest flaws to the adoption of crypto assets. It\'s inefficient too, costing millions of dollars each month and processing just seven transactions a second. Skycoin uses a new consensus algorithm, Network Consensus which requires no mining.',
       link: 'Learn about Network Consensus',
     },
     distribution: {
