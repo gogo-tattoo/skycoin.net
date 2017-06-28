@@ -2,7 +2,6 @@
   "name": "skycoin.net",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://skycoin.github.io/skycoin.net/",
   "dependencies": {
     "flat": "^2.0.1",
     "glamor": "^2.20.25",
