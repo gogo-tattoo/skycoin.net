@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
 import { Flex, Box } from 'grid-styled';
 import { rem } from 'polished';
 import { FormattedMessage } from 'react-intl';
@@ -12,10 +11,6 @@ import megaphone from './megaphone.png';
 const Announcement = styled.div`
   background-color: rgba(0, 0, 0, 0.25);
   width: 100%;
-`;
-
-const StyledLink = styled(Link)`
-  color: white;
 `;
 
 const Icon = styled.img.attrs({
@@ -40,4 +35,4 @@ export default () => (
       </Flex>
     </Container>
   </Announcement>
-)
+);

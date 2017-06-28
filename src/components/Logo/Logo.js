@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { rem } from 'polished';
@@ -10,7 +11,7 @@ const StyledLink = styled(Link)`
   display: block;
 `;
 
-const Logo = styled.img.attrs({
+const Img = styled.img.attrs({
   alt: 'Skycoin',
 })`
   display: block;
@@ -18,8 +19,18 @@ const Logo = styled.img.attrs({
   max-width: 100%;
 `;
 
-export default (props) => (
+const Logo = props => (
   <StyledLink to="/">
-    <Logo {...props} src={props.white ? logoWhite : logo}/>
+    <Img {...props} src={props.white ? logoWhite : logo} />
   </StyledLink>
 );
+
+Logo.propTypes = {
+  white: PropTypes.bool,
+};
+
+Logo.defaultProps = {
+  white: false,
+};
+
+export default Logo;

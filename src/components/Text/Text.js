@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import { rem } from 'polished';
 import { space, width, fontSize, color } from 'styled-system';
 
@@ -12,7 +12,7 @@ export default styled.p`
   ${width}
 
   font-family: ${FONT_FAMILIES.sans};
-  font-weight: ${props => props.heavy ? 500 : 400};
+  font-weight: ${props => (props.heavy ? 500 : 400)};
   line-height: ${rem(24)};
 
   ${media.sm.css`

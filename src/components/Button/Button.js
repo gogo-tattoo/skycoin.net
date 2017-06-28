@@ -12,7 +12,7 @@ export default styled.a`
   line-height: 1;
   font-weight: 700;
 
-  border-radius: ${props => props.pill ? BORDER_RADIUS.pill : BORDER_RADIUS.base};
+  border-radius: ${props => (props.pill ? BORDER_RADIUS.pill : BORDER_RADIUS.base)};
   box-shadow: ${BOX_SHADOWS.base};
   font-family: ${FONT_FAMILIES.mono};
   font-size: ${rem(FONT_SIZES[3])};

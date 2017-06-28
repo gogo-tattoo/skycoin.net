@@ -2,16 +2,16 @@ import React from 'react';
 import styled from 'styled-components';
 import { Flex, Box } from 'grid-styled';
 import { Link } from 'react-router-dom';
-import Hide from 'hidden-styled'
+import { FormattedMessage } from 'react-intl';
 
-import { COLORS } from 'config';
-import Heading from 'components/Heading';
-import Text from 'components/Text';
-import Button from 'components/Button';
 import Container from 'components/Container';
+import Heading from 'components/Heading';
 import Label from 'components/Label';
+import Text from 'components/Text';
+
 import distribution from './distribution.png';
 
+// TODO: update gradient to use global colors
 const Distribution = styled.div`
   background-image: linear-gradient(-155deg, #686e96 0%, #373b5c 100%);
 `;
@@ -27,24 +27,26 @@ export default () => (
   <Distribution>
     <Container>
       <Flex>
-        <Box width={[0, 1/3]} mr={[0, 4]}>
+        <Box width={[0, 1 / 3]} mr={[0, 4]}>
           <Graphic />
         </Box>
 
-        <Box width={[1/1, 2/3]} py={[7, 9]}>
-          <Label>Digging deeper</Label>
+        <Box width={[1 / 1, 2 / 3]} py={[7, 9]}>
+          <Label>
+            <FormattedMessage id="home.distribution.label" />
+          </Label>
 
           <Heading heavy as="h2" my={[4, 5]} fontSize={[5, 6]} color="white">
-            Distribution
+            <FormattedMessage id="home.distribution.heading" />
           </Heading>
 
           <Text fontSize={[3, 3, 4]} mb={[4, 5]} color="white" heavy>
-            As coins aren’t mined, Skycoin distribution is unlike that of a standard token or asset. To ensure continued development, coins are awarded and distributed to contributors, developers and investors and sold on exchanges like C2CX and Cryptopia. In the coming months, 20% of coins will be auctioned/ICO’ed.
+            <FormattedMessage id="home.distribution.body" />
           </Text>
 
           <Text fontSize={[3, 3, 4]} mb={0} heavy color="white">
             <Link to="/">
-              Learn about distribution
+              <FormattedMessage id="home.distribution.link" />
             </Link>
           </Text>
         </Box>

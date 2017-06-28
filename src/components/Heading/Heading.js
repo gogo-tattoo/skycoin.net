@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import { space, width, fontSize, color } from 'styled-system';
 import createComponentFromTagProp from 'react-create-component-from-tag-prop';
 
@@ -16,6 +16,6 @@ export default styled(Heading)`
   ${width}
 
   font-family: ${FONT_FAMILIES.mono};
-  font-weight: ${props => props.heavy ? 'bold' : 'normal'};
+  font-weight: ${props => (props.heavy ? 'bold' : 'normal')};
   line-height: 1.5;
 `;

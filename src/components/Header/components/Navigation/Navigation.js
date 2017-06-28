@@ -3,11 +3,11 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { FormattedMessage } from 'react-intl';
 import { rem } from 'polished';
-import Hide from 'hidden-styled'
+import Hide from 'hidden-styled';
 
-import media from 'utils/media';
 import { SPACE, FONT_SIZES, FONT_FAMILIES } from 'config';
 import Buy from 'components/Buy';
+import media from 'utils/media';
 
 const Navigation = styled.div`
   font-size: ${rem(FONT_SIZES[1])};
@@ -41,12 +41,11 @@ const StyledLink = styled(Link)`
 
 const InlineHide = Hide.extend`
   display: inline;
-  color: red;
 `;
 
 export default () => (
   <Navigation>
-    <StyledLink to="/">
+    <StyledLink to="/distribution">
       <FormattedMessage id="header.navigation.distribution" />
     </StyledLink>
 
@@ -59,7 +58,9 @@ export default () => (
     </StyledLink>
 
     <InlineHide xs sm>
-      <Buy color="white" pill outlined />
+      <Buy color="white" pill outlined>
+        <FormattedMessage id="header.navigation.buy" />
+      </Buy>
     </InlineHide>
   </Navigation>
 );

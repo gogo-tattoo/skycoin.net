@@ -17,11 +17,11 @@ export default () => (
   <Header>
     <Container>
       <Flex align="center" wrap>
-        <Box width={[1/1, 1/3]}>
+        <Box width={[1 / 1, 1 / 3]}>
           <Logo white />
         </Box>
 
-        <Box width={[1/1, 2/3]}>
+        <Box width={[1 / 1, 2 / 3]}>
           <Navigation />
         </Box>
       </Flex>

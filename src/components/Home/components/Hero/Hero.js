@@ -13,7 +13,6 @@ const Hero = styled.div`
   background-image: linear-gradient(-110deg, ${COLORS.base}, ${COLORS.violet[4]});
   position: relative;
   height: 33rem;
-  z-index: -1;
 
   ${media.sm.css`
     height: 40rem;
@@ -26,6 +25,7 @@ const Hero = styled.div`
 
 const StyledFlex = styled(Flex)`
   height: 100%;
+  z-index: 1;
 `;
 
 export default () => (

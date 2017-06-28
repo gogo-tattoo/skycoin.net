@@ -1,10 +1,16 @@
 import React from 'react';
-import { FormattedMessage } from 'react-intl';
+import PropTypes from 'prop-types';
 
 import Button from '../Button';
 
-export default (props) => (
+const Buy = ({ children, ...props }) => (
   <Button {...props}>
-    <FormattedMessage id="buy" />
+    {children}
   </Button>
 );
+
+Buy.propTypes = {
+  children: PropTypes.element.isRequired,
+};
+
+export default Buy;

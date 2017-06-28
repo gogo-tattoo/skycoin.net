@@ -13,7 +13,6 @@ export default styled.div`
   width: 100%;
   top: 12.5%;
   pointer-events: none;
-  z-index: -1;
 
   ${media.md.css`
     background-size: contain;

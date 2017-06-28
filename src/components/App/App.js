@@ -1,16 +1,13 @@
 import React from 'react';
-import { Helmet } from "react-helmet";
+import PropTypes from 'prop-types';
 import flatten from 'flat';
 import values from 'lodash/values';
+import { Helmet } from 'react-helmet';
 import { ThemeProvider } from 'styled-components';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { IntlProvider, addLocaleData } from 'react-intl';
 import zh from 'react-intl/locale-data/zh';
 import ru from 'react-intl/locale-data/ru';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-} from 'react-router-dom';
 
 import { COLORS, BREAKPOINTS, SPACE, FONT_SIZES } from 'config';
 import * as locales from 'locales';
@@ -48,6 +45,10 @@ const Root = ({ locale, ...props }) => (
     </div>
   </IntlProvider>
 );
+
+Root.propTypes = {
+  locale: PropTypes.string.isRequired,
+};
 
 export default () => (
   <Router>
