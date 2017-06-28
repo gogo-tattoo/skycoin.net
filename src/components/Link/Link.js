@@ -15,8 +15,8 @@ const Link = ({ to, href, match, children, ...props }) => {
     return <a href={getURL(match, href)} {...props}>{children}</a>;
   }
 
-  return <a {...props}>{children}</a>
-}
+  return <a {...props}>{children}</a>;
+};
 
 Link.propTypes = {
   to: PropTypes.string,

@@ -6,7 +6,6 @@ import { Helmet } from 'react-helmet';
 
 import Heading from 'components/Heading';
 import Button from 'components/Button';
-import Footer from 'components/Footer';
 
 const Wrapper = styled.div`
   text-align: center;
