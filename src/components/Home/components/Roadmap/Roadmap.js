@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Flex, Box } from 'grid-styled';
-import { Link } from 'react-router-dom';
 import { rem } from 'polished';
 import { FormattedMessage } from 'react-intl';
 
@@ -33,11 +32,12 @@ export default () => (
             <FormattedMessage id="home.roadmap.blurb" />
           </Text>
 
-          <Text heavy mb={0} fontSize={[2, 2, 3]} color="base">
+          {/* TODO: add link once we have a roadmap page */}
+          {/* <Text heavy mb={0} fontSize={[2, 2, 3]} color="base">
             <Link to="/">
               <FormattedMessage id="home.roadmap.roadmapLink" />
             </Link>
-          </Text>
+          </Text> */}
 
           <Divider />
           <Icon />
@@ -46,7 +46,14 @@ export default () => (
             <FormattedMessage id="home.roadmap.community" />
           </Text>
 
-          <Button color="base" mb={[4, 5]} outlined big fontSize={[1, 3]}>
+          <Button
+            outlined
+            big
+            href="https://t.me/Skycoin"
+            color="base"
+            mb={[4, 5]}
+            fontSize={[1, 3]}
+          >
             <FormattedMessage id="home.roadmap.communityLink" />
           </Button>
         </Box>

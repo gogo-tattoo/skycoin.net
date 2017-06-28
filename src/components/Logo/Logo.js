@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
 import { rem } from 'polished';
 
+import Link from 'components/Link';
 import logo from './logo.svg';
 import logoWhite from './logoWhite.svg';
 

@@ -1,19 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Switch, Route } from 'react-router-dom';
-import { resolve } from 'path';
 
 import Home from '../Home';
 import Distribution from '../Distribution';
 import NotFound from '../NotFound';
 
-const Routes = ({ match }) => (
-  <Switch>
-    <Route path={match.url} exact component={Home} />
-    <Route path={resolve(match.url, 'distribution')} exact component={Distribution} />
-    <Route path="*" component={NotFound} />
-  </Switch>
-);
+const Routes = ({ match }) => {
+  const prefix = match.path === '/' ? '/' : '/:locale';
+
+  return (
+    <Switch>
+      <Route path={`${prefix}`} exact component={Home} />
+      <Route path={`${prefix}/distribution`} exact component={Distribution} />
+      <Route path={`${prefix}*`} component={NotFound} />
+    </Switch>
+  );
+};
 
 Routes.propTypes = {
   match: PropTypes.shape({

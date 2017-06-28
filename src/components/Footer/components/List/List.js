@@ -1,23 +1,33 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import styled, { css } from 'styled-components';
 import { FormattedMessage } from 'react-intl';
 
+import Buy from 'components/Buy';
 import Heading from 'components/Heading';
 import Text from 'components/Text';
+import Link from 'components/Link';
 
 const LinkList = styled.ul`
   list-style: none;
   margin: 0;
 `;
 
-const StyledLink = styled(Link)`
+const styles = css`
   text-decoration: none;
+  cursor: pointer;
 
   &:hover {
     text-decoration: underline;
   }
+`;
+
+const StyledLink = styled(Link)`
+ ${styles}
+`;
+
+const StyledBuy = styled(Buy)`
+ ${styles}
 `;
 
 const List = ({ heading, links }) => (
@@ -28,11 +38,17 @@ const List = ({ heading, links }) => (
 
     <Text fontSize={[1, 2, 3]} color="gray.8" mb={0}>
       <LinkList>
-        {links.map(({ label, to }, linkIndex) => (
+        {links.map(({ label, href, to, buy }, linkIndex) => (
           <li key={linkIndex}>
-            <StyledLink to={to}>
-              <FormattedMessage id={label} />
-            </StyledLink>
+            {buy ? (
+              <StyledBuy asAnchor>
+                <FormattedMessage id={label} />
+              </StyledBuy>
+            ) : (
+              <StyledLink href={href} to={to}>
+                <FormattedMessage id={label} />
+              </StyledLink>
+            )}
           </li>
         ))}
       </LinkList>
@@ -43,7 +59,8 @@ const List = ({ heading, links }) => (
 List.propTypes = {
   heading: PropTypes.string.isRequired,
   links: PropTypes.shape({
-    to: PropTypes.string.isRequired,
+    buy: PropTypes.bool,
+    to: PropTypes.string,
     label: PropTypes.string.isRequired,
   }).isRequired,
 };

@@ -12,6 +12,7 @@ import ru from 'react-intl/locale-data/ru';
 import { COLORS, BREAKPOINTS, SPACE, FONT_SIZES } from 'config';
 import * as locales from 'locales';
 import Routes from '../Routes';
+import ScrollToTop from '../ScrollToTop';
 
 addLocaleData([...zh, ...ru]);
 
@@ -52,10 +53,12 @@ Root.propTypes = {
 
 export default () => (
   <Router>
-    <Switch>
-      <Route path="/cn" render={props => <Root {...props} locale="zh" />} />
-      <Route path="/ru" render={props => <Root {...props} locale="ru" />} />
-      <Route path="/" render={props => <Root {...props} locale="en" />} />
-    </Switch>
+    <ScrollToTop>
+      <Switch>
+        <Route path="/cn" render={props => <Root {...props} locale="zh" />} />
+        <Route path="/ru" render={props => <Root {...props} locale="ru" />} />
+        <Route path="/" render={props => <Root {...props} locale="en" />} />
+      </Switch>
+    </ScrollToTop>
   </Router>
 );

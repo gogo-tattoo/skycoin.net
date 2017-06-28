@@ -41,7 +41,14 @@ export default () => (
               <FormattedMessage id="getStarted.buy" />
             </Buy>
 
-            <Button color="violet.5" outlined ml={[2, 5]} big fontSize={[1, 3]}>
+            <Button
+              outlined
+              big
+              href="/downloads.html"
+              color="violet.5"
+              ml={[2, 5]}
+              fontSize={[1, 3]}
+            >
               <FormattedMessage id="getStarted.wallet" />
             </Button>
           </Buttons>

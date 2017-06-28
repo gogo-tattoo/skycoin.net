@@ -2,15 +2,17 @@ import styled, { css } from 'styled-components';
 import { space, width, fontSize, color } from 'styled-system';
 import { rem } from 'polished';
 
+import Link from 'components/Link';
 import media from 'utils/media';
 import { FONT_FAMILIES, FONT_SIZES, SPACE, BORDER_RADIUS, BOX_SHADOWS } from 'config';
 
-export default styled.a`
+export default styled(Link)`
   display: inline-block;
   border: 1px solid transparent;
   cursor: pointer;
   line-height: 1;
   font-weight: 700;
+  text-decoration: none;
 
   border-radius: ${props => (props.pill ? BORDER_RADIUS.pill : BORDER_RADIUS.base)};
   box-shadow: ${BOX_SHADOWS.base};

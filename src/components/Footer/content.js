@@ -2,45 +2,39 @@ export default [{
   heading: 'footer.getStarted.heading',
   links: [{
     label: 'footer.getStarted.wallet',
-    to: '/',
+    href: 'downloads.html',
   }, {
     label: 'footer.getStarted.buy',
-    to: '/',
+    buy: true,
   }, {
     label: 'footer.getStarted.howItWorks',
-    to: '/',
-  }, {
-    label: 'footer.getStarted.quickStart',
-    to: '/',
+    href: 'infographics.html',
   }],
 }, {
   heading: 'footer.explore.heading',
   links: [{
     label: 'footer.explore.distribution',
-    to: '/',
+    to: 'distribution',
   }, {
     label: 'footer.explore.whitepapers',
-    to: '/',
+    href: 'whitepapers.html',
   }, {
     label: 'footer.explore.blockchain',
-    to: '/',
-  }, {
-    label: 'footer.explore.roadmap',
-    to: '/',
+    href: 'http://explorer.skycoin.net/blocks',
   }],
 }, {
   heading: 'footer.community.heading',
   links: [{
-    label: 'footer.community.community',
-    to: '/',
+    label: 'footer.community.blog',
+    href: 'http://skycoin.net/blog/index.html',
   }, {
     label: 'footer.community.github',
-    to: '/',
+    href: 'https://github.com/skycoin/skycoin',
   }, {
     label: 'footer.community.telegram',
-    to: '/',
+    href: 'https://t.me/Skycoin',
   }, {
     label: 'footer.community.slack',
-    to: '/',
+    href: 'http://skycoin.herokuapp.com/',
   }],
 }];

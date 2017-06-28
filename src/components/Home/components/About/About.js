@@ -38,8 +38,8 @@ export default () => (
       </Box>
 
       <Flex wrap>
-        {features.map(({ heading, body, icon }) => (
-          <Box width={[1 / 1, 1 / 2]} mb={[2, 6]}>
+        {features.map(({ heading, body, icon }, index) => (
+          <Box width={[1 / 1, 1 / 2]} mb={[2, 6]} key={index}>
             <Feature heading={heading} body={body} icon={icon} />
           </Box>
         ))}

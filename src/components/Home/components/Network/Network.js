@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Flex, Box } from 'grid-styled';
-import { Link } from 'react-router-dom';
 import { FormattedMessage } from 'react-intl';
 
 import Container from 'components/Container';
 import Heading from 'components/Heading';
+import Link from 'components/Link';
 import Label from 'components/Label';
 import Text from 'components/Text';
 
@@ -35,7 +35,7 @@ export default () => (
           </Text>
 
           <Text fontSize={[3, 3, 4]} mb={0} heavy color="base">
-            <Link to="/">
+            <Link href="infographics.html">
               <FormattedMessage id="home.network.link" />
             </Link>
           </Text>

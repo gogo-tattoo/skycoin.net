@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
 import { FormattedMessage } from 'react-intl';
 import { rem } from 'polished';
 import Hide from 'hidden-styled';
 
 import { SPACE, FONT_SIZES, FONT_FAMILIES } from 'config';
+import Link from 'components/Link';
 import Buy from 'components/Buy';
 import media from 'utils/media';
 
@@ -45,15 +45,15 @@ const InlineHide = Hide.extend`
 
 export default () => (
   <Navigation>
-    <StyledLink to="/distribution">
+    <StyledLink href="/distribution">
       <FormattedMessage id="header.navigation.distribution" />
     </StyledLink>
 
-    <StyledLink to="/">
+    <StyledLink href="/downloads.html">
       <FormattedMessage id="header.navigation.downloads" />
     </StyledLink>
 
-    <StyledLink to="/">
+    <StyledLink href="http://skycoin.net/blog/index.html">
       <FormattedMessage id="header.navigation.blog" />
     </StyledLink>
 

@@ -24,7 +24,7 @@ export default {
     },
     community: {
       heading: 'Community',
-      community: 'Community',
+      blog: 'Blog',
       github: 'Github',
       telegram: 'Telegram',
       slack: 'Slack',

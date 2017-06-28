@@ -6,6 +6,7 @@ import { Helmet } from 'react-helmet';
 
 import Heading from 'components/Heading';
 import Button from 'components/Button';
+import Footer from 'components/Footer';
 
 const Wrapper = styled.div`
   text-align: center;
@@ -26,7 +27,7 @@ const NotFound = ({ intl }) => (
         <FormattedMessage id="notFound.heading" />
       </Heading>
 
-      <Button color="base" outlined big fontSize={[1, 3]}>
+      <Button to="/" color="base" outlined big fontSize={[1, 3]}>
         <FormattedMessage id="notFound.home" />
       </Button>
     </div>
