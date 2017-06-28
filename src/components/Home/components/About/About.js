@@ -32,7 +32,7 @@ export default () => (
           <FormattedMessage id="home.about.lead" />
         </Text>
 
-        <Button color="white" bg="base" big fontSize={[1, 3]}>
+        <Button href="downloads.html" color="white" bg="base" big fontSize={[1, 3]}>
           <FormattedMessage id="home.about.whitepaper" />
         </Button>
       </Box>
