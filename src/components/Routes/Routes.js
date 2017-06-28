@@ -7,12 +7,12 @@ import Distribution from '../Distribution';
 import NotFound from '../NotFound';
 
 const Routes = ({ match }) => {
-  const prefix = match.path === '/' ? '/' : '/:locale';
+  const prefix = match.path === '/' ? '/' : '/:locale/';
 
   return (
     <Switch>
       <Route path={`${prefix}`} exact component={Home} />
-      <Route path={`${prefix}/distribution`} exact component={Distribution} />
+      <Route path={`${prefix}distribution`} exact component={Distribution} />
       <Route path={`${prefix}*`} component={NotFound} />
     </Switch>
   );

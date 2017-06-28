@@ -2,9 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link as RouterLink, withRouter } from 'react-router-dom';
 import join from 'join-path';
+import removeTrailingSlash from 'remove-trailing-slash';
 
-const getURL = (match, url) =>
-  (url.includes('://') ? url : join(match.params.locale, url));
+const getURL = (match, url) => removeTrailingSlash(
+  url.includes('://') ? url : join('/', match.params.locale, url),
+);
 
 const Link = ({ to, href, match, children, ...props }) => {
   if (to) {
