@@ -1,15 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 import { FormattedMessage } from 'react-intl';
 import { rem } from 'polished';
 import Hide from 'hidden-styled';
 
-import { SPACE, FONT_SIZES, FONT_FAMILIES } from 'config';
+import { SPACE, FONT_SIZES, FONT_FAMILIES, COLORS } from 'config';
 import Link from 'components/Link';
 import Buy from 'components/Buy';
 import media from 'utils/media';
 
-const Navigation = styled.div`
+const Wrapper = styled.div`
   font-size: ${rem(FONT_SIZES[1])};
   padding-top: ${rem(SPACE[4])};
   text-align: left;
@@ -24,7 +25,7 @@ const Navigation = styled.div`
 const StyledLink = styled(Link)`
   margin-right: ${rem(SPACE[5])};
   font-family: ${FONT_FAMILIES.mono};
-  color: white;
+  color: ${props => (props.white ? 'white' : COLORS.black)};
   text-decoration: none;
   font-weight: 700;
 
@@ -43,24 +44,34 @@ const InlineHide = Hide.extend`
   display: inline;
 `;
 
-export default () => (
-  <Navigation>
-    <StyledLink href="/distribution">
+const Navigation = ({ white }) => (
+  <Wrapper>
+    <StyledLink white={white} href="/distribution">
       <FormattedMessage id="header.navigation.distribution" />
     </StyledLink>
 
-    <StyledLink href="/downloads.html">
+    <StyledLink white={white} href="/downloads.html">
       <FormattedMessage id="header.navigation.downloads" />
     </StyledLink>
 
-    <StyledLink href="http://skycoin.net/blog/index.html">
+    <StyledLink white={white} href="http://skycoin.net/blog/index.html">
       <FormattedMessage id="header.navigation.blog" />
     </StyledLink>
 
     <InlineHide xs sm>
-      <Buy color="white" pill outlined>
+      <Buy color={white ? 'white' : 'black'} pill outlined>
         <FormattedMessage id="header.navigation.buy" />
       </Buy>
     </InlineHide>
-  </Navigation>
+  </Wrapper>
 );
+
+Navigation.propTypes = {
+  white: PropTypes.bool,
+};
+
+Navigation.defaultProps = {
+  white: false,
+};
+
+export default Navigation;

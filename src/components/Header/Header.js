@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 import { Flex, Box } from 'grid-styled';
 import { rem } from 'polished';
 
@@ -8,23 +9,33 @@ import Container from '../Container';
 import Logo from '../Logo';
 import Navigation from './components/Navigation';
 
-const Header = styled.div`
+const Wrapper = styled.div`
   padding: ${rem(SPACE[6])} 0;
   width: 100%;
 `;
 
-export default () => (
-  <Header>
+const Header = ({ white }) => (
+  <Wrapper>
     <Container>
       <Flex align="center" wrap>
         <Box width={[1 / 1, 1 / 3]}>
-          <Logo white />
+          <Logo white={white} />
         </Box>
 
         <Box width={[1 / 1, 2 / 3]}>
-          <Navigation />
+          <Navigation white={white} />
         </Box>
       </Flex>
     </Container>
-  </Header>
+  </Wrapper>
 );
+
+Header.propTypes = {
+  white: PropTypes.bool,
+};
+
+Header.defaultProps = {
+  white: false,
+};
+
+export default Header;

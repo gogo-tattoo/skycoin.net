@@ -7,6 +7,7 @@ import { FormattedMessage } from 'react-intl';
 
 import { BOX_SHADOWS, SPACE, BORDER_RADIUS } from 'config';
 import Button from '../Button';
+import BuyButtons from '../BuyButtons';
 import Text from '../Text';
 
 const styles = { overlay: { backgroundColor: 'rgba(0, 0, 0, 0.75)' } };
@@ -46,16 +47,6 @@ const StyledModal = styled(Modal)`
   margin-right: -50%;
 `;
 
-const EXCHANGES = [{
-  name: 'buy.c2cx',
-  url: 'https://www.c2cx.com/in/trade_sky',
-  color: 'red.7',
-}, {
-  name: 'buy.cryptopia',
-  url: 'https://www.cryptopia.co.nz/Exchange/?market=SKY_BTC',
-  color: 'gray.7',
-}];
-
 class Buy extends React.Component {
   constructor() {
     super();
@@ -92,22 +83,7 @@ class Buy extends React.Component {
             <FormattedMessage id="buy.heading" />
           </Text>
 
-          <div>
-            {EXCHANGES.map(({ name, color, url }) => (
-              <Button
-                big
-                href={url}
-                m={1}
-                color="white"
-                bg={color}
-                fontSize={[1, 3]}
-                target="_blank"
-                width={[1 / 1, 'auto']}
-              >
-                <FormattedMessage id={name} />
-              </Button>
-            ))}
-          </div>
+          <BuyButtons />
         </StyledModal>
       </Wrapper>
     );

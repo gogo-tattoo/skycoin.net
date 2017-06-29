@@ -34,7 +34,7 @@ export default () => (
 
     <StyledFlex column justify="space-between">
       <Box>
-        <Header />
+        <Header white />
       </Box>
       <Box>
         <Introduction />
