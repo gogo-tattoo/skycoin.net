@@ -12,6 +12,7 @@ export default styled(Link)`
   cursor: pointer;
   line-height: 1;
   font-weight: 700;
+  box-sizing: border-box;
   text-decoration: none;
 
   border-radius: ${props => (props.pill ? BORDER_RADIUS.pill : BORDER_RADIUS.base)};

@@ -30,6 +30,11 @@ export default {
       slack: 'Slack',
     },
   },
+  buy: {
+    heading: 'Choose your preferred exchange to buy Skycoin',
+    c2cx: 'Buy on C2CX',
+    cryptopia: 'Buy on Cryptopia',
+  },
   notFound: {
     title: 'Страница не найдена',
     heading: 'Страница не найдена',

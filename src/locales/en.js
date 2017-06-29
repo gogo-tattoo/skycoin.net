@@ -30,15 +30,20 @@ export default {
       slack: 'Slack',
     },
   },
-  getStarted: {
-    heading: 'Get started with Skycoin',
-    buy: 'Buy Skycoin',
-    wallet: 'Get Wallet',
+  buy: {
+    heading: 'Choose your preferred exchange to buy Skycoin',
+    c2cx: 'Buy on C2CX',
+    cryptopia: 'Buy on Cryptopia',
   },
   notFound: {
     title: 'Page not found',
     heading: 'Page not found',
     home: 'Skycoin homepage',
+  },
+  getStarted: {
+    heading: 'Get started with Skycoin',
+    buy: 'Buy Skycoin',
+    wallet: 'Get Wallet',
   },
   home: {
     title: 'Foundations for the next internet',

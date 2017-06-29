@@ -3,6 +3,7 @@ import { FormattedMessage } from 'react-intl';
 
 import Container from 'components/Container';
 import Button from 'components/Button';
+import Buy from 'components/Buy';
 import Heading from 'components/Heading';
 import Text from 'components/Text';
 
@@ -12,9 +13,9 @@ export default () => (
       <FormattedMessage id="home.hero.heading" values={{ break: <br /> }} />
     </Heading>
 
-    <Button color="violet.5" bg="white" mr={[2, 5]} big fontSize={[1, 3]}>
+    <Buy color="violet.5" bg="white" mr={[2, 5]} big fontSize={[1, 3]}>
       <FormattedMessage id="home.hero.buy" />
-    </Button>
+    </Buy>
 
     <Button href="/downloads.html" color="white" big outlined fontSize={[1, 3]}>
       <FormattedMessage id="home.hero.wallet.get" />
