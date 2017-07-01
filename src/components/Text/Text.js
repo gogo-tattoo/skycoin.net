@@ -20,6 +20,7 @@ export default styled(Text)`
   font-family: ${FONT_FAMILIES.sans};
   font-weight: ${props => (props.heavy ? 500 : 400)};
   line-height: ${rem(24)};
+  text-transform: ${props => (props.caps ? 'uppercase' : 'none')};
 
   ${media.sm.css`
     line-height: ${rem(28)};

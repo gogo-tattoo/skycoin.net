@@ -6,11 +6,15 @@ import media from 'utils/media';
 import Container from 'components/Container';
 import Heading from 'components/Heading';
 import Text from 'components/Text';
+import Countdown from '../Countdown';
+import background from './background.png';
 
 const Hero = styled.div`
-  background-image: linear-gradient(-155deg, #686e96 0%, #373b5c 100%);
+  background:
+    url(${background}) center center / cover,
+    linear-gradient(-155deg, #686e96 0%, #373b5c 100%);
+  ;
   position: relative;
-  height: 30rem;
   text-align: center;
 
   ${media.sm.css`
@@ -32,16 +36,18 @@ export default () => (
     <StyledFlex column justify="center">
       <Container>
         <Flex column align="center">
-          <Box width={[1 / 1, 2 / 3]}>
+          <Box width={[1 / 1, 1 / 1, 2 / 3]}>
             <Container>
-              <Heading heavy as="h1" color="white" fontSize={[6, 7, 8]} mb={7}>
+              <Heading heavy as="h1" color="white" fontSize={[6, 7, 8]} my={[5, 7]}>
                 Coin Distribution
               </Heading>
             </Container>
           </Box>
 
-          <Box width={[1 / 1, 2 / 3]}>
-            <Text fontSize={[3, 3, 4]} color="white" heavy mb={[5, 7]}>
+          <Box width={[1 / 1, 1 / 1, 2 / 3]}>
+            <Countdown />
+
+            <Text fontSize={[3, 3, 4]} color="white" heavy my={[5, 7]}>
               As coins aren’t mined, Skycoin distribution is unlike that of a standard token or asset. To ensure continued development in a project that will take many years to complete coins are released in a scheme similar to that of a standard company, with the first batches going to early developers and investors.
             </Text>
 
