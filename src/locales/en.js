@@ -106,4 +106,8 @@ export default {
       },
     },
   },
+  distribution: {
+    title: 'Coin Distribution',
+    description: 'As coins aren’t mined, Skycoin distribution is unlike that of a standard token or asset. To ensure continued development in a project that will take many years to complete coins are released in a scheme similar to that of a standard company, with the first batches going to early developers and investors.',
+  },
 };
