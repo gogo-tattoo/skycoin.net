@@ -1,40 +1,37 @@
 export default [{
-  heading: 'footer.getStarted.heading',
+  heading: 'footer.getStarted',
   links: [{
-    label: 'footer.getStarted.wallet',
+    label: 'footer.wallet',
     href: 'downloads.html',
   }, {
-    label: 'footer.getStarted.buy',
+    label: 'footer.buy',
     buy: true,
   }, {
-    label: 'footer.getStarted.howItWorks',
-    href: 'infographics.html',
+    label: 'footer.blog',
+    href: 'http://skycoin.net/blog/index.html',
   }],
 }, {
-  heading: 'footer.explore.heading',
+  heading: 'footer.explore',
   links: [{
-    label: 'footer.explore.distribution',
+    label: 'footer.distribution',
     to: 'distribution',
   }, {
-    label: 'footer.explore.whitepapers',
+    label: 'footer.whitepapers',
     href: 'whitepapers.html',
   }, {
-    label: 'footer.explore.blockchain',
+    label: 'footer.blockchain',
     href: 'http://explorer.skycoin.net/blocks',
   }],
 }, {
-  heading: 'footer.community.heading',
+  heading: 'footer.community',
   links: [{
-    label: 'footer.community.blog',
-    href: 'http://skycoin.net/blog/index.html',
-  }, {
-    label: 'footer.community.github',
+    label: 'footer.github',
     href: 'https://github.com/skycoin/skycoin',
   }, {
-    label: 'footer.community.telegram',
+    label: 'footer.telegram',
     href: 'https://t.me/Skycoin',
   }, {
-    label: 'footer.community.slack',
+    label: 'footer.slack',
     href: 'http://skycoin.herokuapp.com/',
   }],
 }];
