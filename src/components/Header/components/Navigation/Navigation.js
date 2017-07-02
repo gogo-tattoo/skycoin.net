@@ -29,6 +29,10 @@ const StyledLink = styled(Link)`
   text-decoration: none;
   font-weight: 700;
 
+  &:hover {
+    text-decoration: underline;
+  }
+
   ${media.sm.css`
     margin-right: 0;
     margin-left: ${rem(SPACE[7])};

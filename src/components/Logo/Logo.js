@@ -15,7 +15,7 @@ const Img = styled.img.attrs({
   alt: 'Skycoin',
 })`
   display: block;
-  height: ${rem(34)};
+  height: ${rem(24)};
   max-width: 100%;
 `;
 
