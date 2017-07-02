@@ -6,11 +6,9 @@ import { FormattedMessage, FormattedHTMLMessage } from 'react-intl';
 import { rem } from 'polished';
 
 import media from 'utils/media';
-import { BOX_SHADOWS, BORDER_RADIUS, COLORS, SPACE } from 'config';
+import { BOX_SHADOWS, BORDER_RADIUS, COLORS, SPACE, COUNTDOWN_TARGET } from 'config';
 import Heading from 'components/Heading';
 import Text from 'components/Text';
-
-const COUNTDOWN_TARGET = new Date('2017-08-01T04:00:00.000Z');
 
 const getDays = t => Math.floor(t / (1000 * 60 * 60 * 24));
 const getHours = t => Math.floor((t / (1000 * 60 * 60)) % 24);
