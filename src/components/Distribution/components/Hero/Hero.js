@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Flex, Box } from 'grid-styled';
+import { FormattedMessage, FormattedHTMLMessage } from 'react-intl';
 
 import media from 'utils/media';
 import Container from 'components/Container';
@@ -39,7 +40,7 @@ export default () => (
           <Box width={[1 / 1, 1 / 1, 2 / 3]}>
             <Container>
               <Heading heavy as="h1" color="white" fontSize={[6, 7, 8]} my={[5, 7]}>
-                Coin Distribution
+                <FormattedMessage id="distribution.hero.heading" />
               </Heading>
             </Container>
           </Box>
@@ -48,11 +49,11 @@ export default () => (
             <Countdown />
 
             <Text fontSize={[3, 3, 4]} color="white" heavy my={[5, 7]}>
-              As coins aren’t mined, Skycoin distribution is unlike that of a standard token or asset. To ensure continued development in a project that will take many years to complete coins are released in a scheme similar to that of a standard company, with the first batches going to early developers and investors.
+              <FormattedMessage id="distribution.hero.lead" />
             </Text>
 
             <Text fontSize={[3, 3, 4]} color="white" heavy mb={[5, 7]}>
-              Each week we will distribute <strong>1000</strong> coins.
+              <FormattedHTMLMessage id="distribution.hero.body" />
             </Text>
           </Box>
         </Flex>

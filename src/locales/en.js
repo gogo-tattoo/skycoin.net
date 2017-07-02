@@ -109,5 +109,17 @@ export default {
   distribution: {
     title: 'Coin Distribution',
     description: 'As coins aren’t mined, Skycoin distribution is unlike that of a standard token or asset. To ensure continued development in a project that will take many years to complete coins are released in a scheme similar to that of a standard company, with the first batches going to early developers and investors.',
+    hero: {
+      heading: 'Coin Distribution',
+      lead: 'As coins aren’t mined, Skycoin distribution is unlike that of a standard token or asset. To ensure continued development in a project that will take many years to complete coins are released in a scheme similar to that of a standard company, with the first batches going to early developers and investors.',
+      body: 'Each week we will distribute <strong>1000</strong> coins.',
+    },
+    countdown: {
+      heading: 'The next distribution will begin on <strong>31st&nbsp;June&nbsp;2017</strong>.',
+      days: 'Days',
+      hours: 'Hours',
+      minutes: 'Minutes',
+      seconds: 'Seconds',
+    },
   },
 };

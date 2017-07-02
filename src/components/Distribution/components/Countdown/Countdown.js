@@ -2,9 +2,11 @@ import React from 'react';
 import padStart from 'lodash/padStart';
 import { Flex, Box } from 'grid-styled';
 import styled from 'styled-components';
+import { FormattedMessage, FormattedHTMLMessage } from 'react-intl';
+import { rem } from 'polished';
 
 import media from 'utils/media';
-import { BOX_SHADOWS, BORDER_RADIUS, COLORS } from 'config';
+import { BOX_SHADOWS, BORDER_RADIUS, COLORS, SPACE } from 'config';
 import Heading from 'components/Heading';
 import Text from 'components/Text';
 
@@ -15,28 +17,27 @@ const getHours = t => Math.floor((t / (1000 * 60 * 60)) % 24);
 const getMinutes = t => Math.floor((t / 1000 / 60) % 60);
 const getSeconds = t => Math.floor((t / 1000) % 60);
 
-const display = t => padStart(t, 2, 0).split('');
+const formatTime = t => padStart(t, 2, 0).split('');
 
 const Wrapper = styled.div`
   margin: 0 auto;
   background: white;
   border-radius: ${BORDER_RADIUS.base};
   box-shadow: ${BOX_SHADOWS.base};
-  padding: 1rem 0.5rem;
-  max-width: 350px;
+  padding: ${rem(SPACE[4])} ${rem(SPACE[2])};
+  max-width: ${rem(350)};
 
   ${media.sm.css`
-    max-width: 550px;
-    padding: 1.5rem 1rem;
+    max-width: ${rem(550)};
+    padding: ${rem(SPACE[6])} ${rem(SPACE[4])};
   `}
 
   ${media.md.css`
     max-width: none;
-    padding: 2rem 1.5rem;
+    padding: ${rem(SPACE[7])} ${rem(SPACE[6])};
   `}
 `;
 
-// TODO: make this a styled span
 const Digit = styled(Heading).attrs({
   fontSize: [5, 8, 9],
   color: 'base',
@@ -46,17 +47,17 @@ const Digit = styled(Heading).attrs({
   display: inline-block;
   border-radius: ${BORDER_RADIUS.base};
   box-shadow: ${BOX_SHADOWS.base};
-  width: 25px;
-  height: 40px;
-  line-height: 40px;
+  width: ${rem(25)};
+  height: ${rem(40)};
+  line-height: ${rem(40)};
   text-align: center;
-  margin: 0 2px;
+  margin: 0 ${rem(2)};
 
   ${media.sm.css`
-    width: 50px;
-    height: 70px;
-    line-height: 70px;
-    margin: 0 4px;
+    width: ${rem(50)};
+    height: ${rem(75)};
+    line-height: ${rem(75)};
+    margin: 0 ${rem(SPACE[1])};
   `}
 `;
 
@@ -97,36 +98,40 @@ export default class Countdown extends React.Component {
     return (
       <Wrapper>
         <Text fontSize={[1, 4]} color="black" heavy mb={[5, 7]}>
-          The next distribution will begin on <strong>31st&nbsp;June&nbsp;2017</strong>.
+          <FormattedHTMLMessage id="distribution.countdown.heading" />
         </Text>
 
         <Flex>
-          <Box width={1/4}>
-            <Text fontSize={[0]} mb={1} heavy caps color="gray.8">Days</Text>
-            {display(getDays(remaining)).map(i => (
-              <Digit>{i}</Digit>
-            ))}
+          <Box width={1 / 4}>
+            <Text fontSize={[0]} mb={1} heavy caps color="gray.8">
+              <FormattedMessage id="distribution.countdown.days" />
+            </Text>
+
+            {formatTime(getDays(remaining)).map(i => <Digit>{i}</Digit>)}
           </Box>
 
-          <Box width={1/4}>
-            <Text fontSize={[0]} mb={1} heavy caps color="gray.8">Hours</Text>
-            {display(getHours(remaining)).map(i => (
-              <Digit>{i}</Digit>
-            ))}
+          <Box width={1 / 4}>
+            <Text fontSize={[0]} mb={1} heavy caps color="gray.8">
+              <FormattedMessage id="distribution.countdown.hours" />
+            </Text>
+
+            {formatTime(getHours(remaining)).map(i => <Digit>{i}</Digit>)}
           </Box>
 
-          <Box width={1/4}>
-            <Text fontSize={[0]} mb={1} heavy caps color="gray.8">Minutes</Text>
-            {display(getMinutes(remaining)).map(i => (
-              <Digit>{i}</Digit>
-            ))}
+          <Box width={1 / 4}>
+            <Text fontSize={[0]} mb={1} heavy caps color="gray.8">
+              <FormattedMessage id="distribution.countdown.minutes" />
+            </Text>
+
+            {formatTime(getMinutes(remaining)).map(i => <Digit>{i}</Digit>)}
           </Box>
 
-          <Box width={1/4}>
-            <Text fontSize={[0]} mb={1} heavy caps color="gray.8">Seconds</Text>
-            {display(getSeconds(remaining)).map(i => (
-              <Digit>{i}</Digit>
-            ))}
+          <Box width={1 / 4}>
+            <Text fontSize={[0]} mb={1} heavy caps color="gray.8">
+              <FormattedMessage id="distribution.countdown.seconds" />
+            </Text>
+
+            {formatTime(getSeconds(remaining)).map(i => <Digit>{i}</Digit>)}
           </Box>
         </Flex>
       </Wrapper>
