@@ -72,7 +72,7 @@ export default {
     network: {
       label: 'Digging deeper',
       heading: 'Network Consensus',
-      body: 'The oligarchical concentration of power into a handful of mining pools is the greatest threat to the security of existing crypto assets. The power usage of existing consensus algorithm is also unsubstainable and Bitcoin\'s PoW algorithm uses enough electricity to power 50,000 homes, merely to process 6 transactions a second. This cost of millions of dollars per month is passed to the users. Skycoin uses a new consensus algorithm, Network Consensus which requires no mining.',
+      body: 'The concentration of power into a handful of mining pools is the greatest threat to the security of existing crypto assets. The power usage of existing consensus algorithm is also unsubstainable and Bitcoin\'s PoW algorithm uses enough electricity to power 50,000 homes, merely to process 6 transactions a second. This cost of millions of dollars per month is passed to the users. Skycoin uses a new consensus algorithm, Network Consensus which requires no mining.',
       link: 'Learn about Network Consensus',
     },
     distribution: {
