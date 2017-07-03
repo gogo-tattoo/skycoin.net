@@ -85,7 +85,7 @@ export default {
       heading: 'Roadmap',
       blurb: 'Skycoin development can be followed on GitHub. We will be opening bounties for bug fixes, design and development in the coming months.',
       roadmapLink: 'See the full roadmap',
-      community: 'Join the Skycoin community on Telegram.',
+      community: 'To keep up to date with Skycoin’s latest developments or to start contributing, join Skycoin on Telegram.',
       communityLink: 'Join the community',
       timeline: {
         distribution: {
