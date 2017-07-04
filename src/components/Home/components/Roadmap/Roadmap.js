@@ -59,6 +59,7 @@ export default () => (
             color="base"
             mb={[4, 5]}
             fontSize={[1, 3]}
+            target="_blank"
           >
             <FormattedMessage id="home.roadmap.communityLink" />
           </Button>
