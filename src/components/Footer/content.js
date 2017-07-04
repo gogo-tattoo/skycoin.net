@@ -2,7 +2,7 @@ export default [{
   heading: 'footer.getStarted',
   links: [{
     label: 'footer.wallet',
-    href: 'downloads.html',
+    href: 'downloads',
   }, {
     label: 'footer.buy',
     buy: true,
@@ -11,7 +11,7 @@ export default [{
   heading: 'footer.explore',
   links: [{
     label: 'footer.whitepapers',
-    href: 'whitepapers.html',
+    href: 'downloads#whitepapers',
   }, {
     label: 'footer.blockchain',
     href: 'http://explorer.skycoin.net/blocks',

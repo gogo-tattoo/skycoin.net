@@ -44,7 +44,7 @@ export default () => (
             <Button
               outlined
               big
-              href="/downloads.html"
+              to="downloads"
               color="violet.5"
               ml={[2, 5]}
               fontSize={[1, 3]}

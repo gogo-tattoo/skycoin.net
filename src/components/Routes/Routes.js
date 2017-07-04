@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { Switch, Route } from 'react-router-dom';
 
 import Home from '../Home';
+import Downloads from '../Downloads';
 import NotFound from '../NotFound';
 
 const Routes = ({ match }) => {
@@ -11,6 +12,7 @@ const Routes = ({ match }) => {
   return (
     <Switch>
       <Route path={`${prefix}`} exact component={Home} />
+      <Route path={`${prefix}downloads`} exact component={Downloads} />
       <Route path={`${prefix}*`} component={NotFound} />
     </Switch>
   );

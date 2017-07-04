@@ -17,7 +17,7 @@ export default () => (
       <FormattedMessage id="home.hero.buy" />
     </Buy>
 
-    <Button href="/downloads.html" color="white" big outlined fontSize={[1, 3]}>
+    <Button href="downloads" color="white" big outlined fontSize={[1, 3]}>
       <FormattedMessage id="home.hero.wallet.get" />
     </Button>
 

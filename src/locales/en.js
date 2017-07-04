@@ -104,6 +104,29 @@ export default {
       },
     },
   },
+  downloads: {
+    title: 'Downloads',
+    description: 'Download Skycoin Wallet, whitepapers, and infographics.',
+    wallet: {
+      heading: 'Wallet',
+      lead: 'How To: For simple use, download the appropriate version for your operating system with Electron. Using the version without Electron requires compiling. The wallet software does not require installation and can be used as is. If you already used an earlier version in the past, the new wallet software will look for your wallet file and seed in your default user directory. If you lack a pre existing wallet file and seed, the wallet will create a new one for you.',
+      macos: 'MacOS',
+      linux: 'Linux',
+      windows: 'Windows',
+      withElectron: 'With Electron',
+      withoutElectron: 'Without Electron',
+      download: 'Download',
+      torrent: 'Torrent',
+    },
+    whitepapers: {
+      heading: 'Whitepapers',
+      download: 'Download',
+    },
+    infographics: {
+      heading: 'Infographics',
+      download: 'Download',
+    },
+  },
   distribution: {
     title: 'Coin Distribution',
     description: 'As coins aren’t mined, Skycoin distribution is unlike that of a standard token or asset. To ensure continued development in a project that will take many years to complete coins are released in a scheme similar to that of a standard company, with the first batches going to early developers and investors.',

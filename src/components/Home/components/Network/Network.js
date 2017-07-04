@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Flex, Box } from 'grid-styled';
 import { FormattedMessage } from 'react-intl';
+import { Flag } from 'flag';
 
 import Container from 'components/Container';
 import Heading from 'components/Heading';
@@ -34,11 +35,16 @@ export default () => (
             <FormattedMessage id="home.network.body" />
           </Text>
 
-          <Text fontSize={[3, 3, 4]} mb={0} heavy color="base">
-            <Link href="infographics.html">
-              <FormattedMessage id="home.network.link" />
-            </Link>
-          </Text>
+          <Flag
+            name="network"
+            render={() => (
+              <Text fontSize={[3, 3, 4]} mb={0} heavy color="base">
+                <Link href="infographics.html">
+                  <FormattedMessage id="home.network.link" />
+                </Link>
+              </Text>
+            )}
+          />
         </Box>
 
         <Box width={[0, 1 / 3]} ml={[0, 4]}>

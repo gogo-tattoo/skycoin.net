@@ -31,4 +31,5 @@ export const FLAGS = {
   russian: false,
   timeline: false,
   distribution: false,
+  network: false,
 };
