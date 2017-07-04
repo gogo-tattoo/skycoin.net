@@ -3,12 +3,14 @@ import styled from 'styled-components';
 import { Flex, Box } from 'grid-styled';
 import { rem } from 'polished';
 import { FormattedMessage } from 'react-intl';
+import { Flag } from 'flag';
 
 import Text from 'components/Text';
 import Heading from 'components/Heading';
 import Button from 'components/Button';
 import Container from 'components/Container';
 import Divider from 'components/Divider';
+import Link from 'components/Link';
 
 import Timeline from './components/Timeline';
 import community from './community.png';
@@ -32,12 +34,16 @@ export default () => (
             <FormattedMessage id="home.roadmap.blurb" />
           </Text>
 
-          {/* TODO: add link once we have a roadmap page */}
-          {/* <Text heavy mb={0} fontSize={[2, 2, 3]} color="base">
-            <Link to="/">
-              <FormattedMessage id="home.roadmap.roadmapLink" />
-            </Link>
-          </Text> */}
+          <Flag
+            name="roadmap"
+            render={() => (
+              <Text heavy mb={0} fontSize={[2, 2, 3]} color="base">
+                <Link to="roadmap">
+                  <FormattedMessage id="home.roadmap.roadmapLink" />
+                </Link>
+              </Text>
+            )}
+          />
 
           <Divider />
           <Icon />

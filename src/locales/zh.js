@@ -1,7 +1,7 @@
 export default {
   header: {
     navigation: {
-      distribution: 'Distribution',
+      whitepapers: 'Whitepapers',
       downloads: 'Downloads',
       blog: 'Blog',
       buy: 'Buy Skycoin',
@@ -13,8 +13,6 @@ export default {
     community: 'Community',
     wallet: 'Get Wallet',
     buy: 'Buy Skycoin',
-    blog: 'Blog',
-    distribution: 'Distribution',
     whitepapers: 'Whitepapers',
     blockchain: 'Blockchain Explorer',
     github: 'Github',
@@ -27,9 +25,9 @@ export default {
     cryptopia: 'Buy on Cryptopia',
   },
   notFound: {
-    title: '找不到网页',
-    heading: '找不到网页',
-    home: 'Skycoin 主页',
+    title: 'Page not found',
+    heading: 'Page not found',
+    home: 'Skycoin homepage',
   },
   getStarted: {
     heading: 'Get started with Skycoin',
@@ -37,16 +35,16 @@ export default {
     wallet: 'Get Wallet',
   },
   home: {
-    title: '下一个互联网的基础',
+    title: 'Foundations for the new internet',
     description: 'Skycoin is a third-generation crypto asset, designed and developed to solve Bitcoin’s speed and security issues.',
     hero: {
-      heading: '下一个互联网的基础。',
+      heading: 'Foundations for{break}the new internet.',
       buy: 'Buy Skycoin',
       wallet: {
         get: 'Get Wallet',
-        blurb: 'Wallet allows you to hold and secure Skycoin.{break}It\'s fast, secure, and free.',
+        blurb: 'Wallet allows you to hold and secure Skycoin.{break}It’s fast, secure, and free.',
       },
-      announcement: 'The next distribution event will begin on 31st May 2017. 100 coins will be distributed.',
+      announcement: '',
     },
     about: {
       heading: 'What is Skycoin?',
@@ -72,20 +70,20 @@ export default {
     network: {
       label: 'Digging deeper',
       heading: 'Network Consensus',
-      body: 'By centralising large amounts of power into a handful of mining pools, mining represents one of the biggest flaws to the adoption of crypto assets. It\'s inefficient too, costing millions of dollars each month and processing just seven transactions a second. Skycoin uses a new consensus algorithm, Network Consensus which requires no mining.',
+      body: 'The concentration of power into a handful of mining pools is the greatest threat to the security of existing crypto assets. The power usage of existing consensus algorithm is also unsubstainable and Bitcoin’s PoW algorithm uses enough electricity to power 50,000 homes, merely to process 6 transactions a second. This cost of millions of dollars per month is passed to the users. Skycoin uses a new consensus algorithm, Network Consensus which requires no mining.',
       link: 'Learn about Network Consensus',
     },
     distribution: {
       label: 'Digging deeper',
       heading: 'Distribution',
-      body: 'As coins aren’t mined, Skycoin distribution is unlike that of a standard token or asset. To ensure continued development, coins are awarded and distributed to contributors, developers and investors and sold on exchanges like C2CX and Cryptopia. In the coming months, 20% of coins will be auctioned/ICO’ed.',
+      body: 'As coins aren’t mined, Skycoin distribution is unlike that of mined crypto currencies. Instead of coins going to the miners, new Skycoin are distributed to contributors, developers and investors. Skycoin’s distribution is designed to get coins in the hands of the users and people building out the ecosystem, instead of giving all the new coins out to miners.',
       link: 'Learn about distribution',
     },
     roadmap: {
       heading: 'Roadmap',
-      blurb: 'Development can be followed and contributed to on GitHub. We will be opening bounties for bug fixes, design and development in the coming months.',
+      blurb: 'Skycoin development can be followed on GitHub. We will be opening bounties for bug fixes, design and development in the coming months.',
       roadmapLink: 'See the full roadmap',
-      community: 'Join Skycoin on Telegram to start contributing, and keep up-to-date with the latest developments.',
+      community: 'To keep up to date with Skycoin’s latest developments or to start contributing, join Skycoin on Telegram.',
       communityLink: 'Join the community',
       timeline: {
         distribution: {
@@ -112,10 +110,10 @@ export default {
     hero: {
       heading: 'Coin Distribution',
       lead: 'As coins aren’t mined, Skycoin distribution is unlike that of a standard token or asset. To ensure continued development in a project that will take many years to complete coins are released in a scheme similar to that of a standard company, with the first batches going to early developers and investors.',
-      body: 'Each week we will distribute <strong>1000</strong> coins.',
+      body: 'Each week we will distribute <strong>XXX</strong> coins.',
     },
     countdown: {
-      heading: 'The next distribution will begin on <strong>31st&nbsp;June&nbsp;2017</strong>.',
+      heading: 'The next distribution will begin on <strong>1st of January, 1970</strong>.',
       days: 'Days',
       hours: 'Hours',
       minutes: 'Minutes',

@@ -50,16 +50,13 @@ const InlineHide = Hide.extend`
 
 const Navigation = ({ white }) => (
   <Wrapper>
-    <StyledLink white={white} href="/distribution">
-      <FormattedMessage id="header.navigation.distribution" />
+
+    <StyledLink white={white} href="downloads#whitepapers">
+      <FormattedMessage id="header.navigation.whitepapers" />
     </StyledLink>
 
-    <StyledLink white={white} href="/downloads.html">
+    <StyledLink white={white} href="downloads">
       <FormattedMessage id="header.navigation.downloads" />
-    </StyledLink>
-
-    <StyledLink white={white} href="http://skycoin.net/blog/index.html">
-      <FormattedMessage id="header.navigation.blog" />
     </StyledLink>
 
     <InlineHide xs sm>

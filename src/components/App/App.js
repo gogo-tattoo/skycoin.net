@@ -5,11 +5,12 @@ import values from 'lodash/values';
 import { Helmet } from 'react-helmet';
 import { ThemeProvider } from 'styled-components';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { FlagsProvider } from 'flag';
 import { IntlProvider, addLocaleData } from 'react-intl';
 import zh from 'react-intl/locale-data/zh';
 import ru from 'react-intl/locale-data/ru';
 
-import { COLORS, BREAKPOINTS, SPACE, FONT_SIZES } from 'config';
+import { COLORS, BREAKPOINTS, SPACE, FONT_SIZES, FLAGS } from 'config';
 import * as locales from 'locales';
 import Routes from '../Routes';
 import ScrollToTop from '../ScrollToTop';
@@ -52,13 +53,15 @@ Root.propTypes = {
 };
 
 export default () => (
-  <Router>
-    <ScrollToTop>
-      <Switch>
-        <Route path="/cn" render={props => <Root {...props} locale="zh" />} />
-        <Route path="/ru" render={props => <Root {...props} locale="ru" />} />
-        <Route path="/" render={props => <Root {...props} locale="en" />} />
-      </Switch>
-    </ScrollToTop>
-  </Router>
+  <FlagsProvider flags={FLAGS}>
+    <Router>
+      <ScrollToTop>
+        <Switch>
+          <Route path="/cn" render={props => <Root {...props} locale="zh" />} />
+          <Route path="/ru" render={props => <Root {...props} locale="ru" />} />
+          <Route path="/" render={props => <Root {...props} locale="en" />} />
+        </Switch>
+      </ScrollToTop>
+    </Router>
+  </FlagsProvider>
 );

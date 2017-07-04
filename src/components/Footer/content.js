@@ -6,16 +6,10 @@ export default [{
   }, {
     label: 'footer.buy',
     buy: true,
-  }, {
-    label: 'footer.blog',
-    href: 'http://skycoin.net/blog/index.html',
   }],
 }, {
   heading: 'footer.explore',
   links: [{
-    label: 'footer.distribution',
-    to: 'distribution',
-  }, {
     label: 'footer.whitepapers',
     href: 'whitepapers.html',
   }, {

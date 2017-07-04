@@ -25,3 +25,10 @@ export const BOX_SHADOWS = {
   base: '0 1px 2px rgba(0, 0, 0, 0.25)',
   hover: '0 1px 4px rgba(0, 0, 0, 0.25)',
 };
+
+export const FLAGS = {
+  chinese: false,
+  russian: false,
+  timeline: false,
+  distribution: false,
+};
