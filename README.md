@@ -38,3 +38,26 @@ $ yarn test
 # Generate coverage report
 $ yarn test -- --coverage
 ```
+
+## Deploying to S3
+
+1. Install and configure the AWS CLI:
+
+  ```shell
+  $ brew install awscli
+  $ aws configure
+  ```
+
+2. Create a static build:
+
+  ```shell
+  $ yarn build
+  ```
+
+3. Sync the build directory with the S3 bucket:
+
+  ```shell
+  $ aws s3 sync build/ s3://bucket-name
+  ```
+
+See [this blog post](https://medium.com/@omgwtfmarc/deploying-create-react-app-to-s3-or-cloudfront-48dae4ce0af) for bucket setup and detailed deployment instructions.
