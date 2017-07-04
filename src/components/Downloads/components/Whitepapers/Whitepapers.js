@@ -19,25 +19,27 @@ export default () => (
 
     <TableWrapper>
       <Table>
-        {downloads.map(({ name, download, filetype, filesize }) => (
-          <tr>
-            <td>{name}</td>
+        <tbody>
+          {downloads.map(({ name, download, filetype, filesize }) => (
+            <tr>
+              <td>{name}</td>
 
-            <td>
-              <a href={download}>
-                <FormattedMessage id="downloads.whitepapers.download" />
-                &nbsp;
-                ({filetype})
-              </a>
-            </td>
+              <td>
+                <a href={download}>
+                  <FormattedMessage id="downloads.whitepapers.download" />
+                  &nbsp;
+                  ({filetype})
+                </a>
+              </td>
 
-            <td>
-              <Text as="span" color="gray.7" heavy>
-                {filesize}
-              </Text>
-            </td>
-          </tr>
-        ))}
+              <td>
+                <Text as="span" color="gray.7" heavy>
+                  {filesize}
+                </Text>
+              </td>
+            </tr>
+          ))}
+        </tbody>
       </Table>
     </TableWrapper>
   </Container>

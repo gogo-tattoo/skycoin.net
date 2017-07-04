@@ -39,48 +39,50 @@ export default () => (
 
       <TableWrapper>
         <Table>
-          {downloads.map(({ platform, icon, builds }) =>
-            builds.map((build, buildIndex) =>
-              build.architectures.map((architecture, architectureIndex) => (
-                <tr>
-                  {buildIndex === 0 &&
-                    <th rowSpan={builds.reduce((a, { architectures: b }) => a + b.length, 0)}>
-                      <Icon src={icons[icon]} />
-                      <FormattedMessage id={platform} />
-                    </th>
-                  }
+          <tbody>
+            {downloads.map(({ platform, icon, builds }) =>
+              builds.map((build, buildIndex) =>
+                build.architectures.map((architecture, architectureIndex) => (
+                  <tr>
+                    {buildIndex === 0 &&
+                      <th rowSpan={builds.reduce((a, { architectures: b }) => a + b.length, 0)}>
+                        <Icon src={icons[icon]} />
+                        <FormattedMessage id={platform} />
+                      </th>
+                    }
 
-                  {architectureIndex === 0 &&
-                    <td rowSpan={build.architectures.length}>
-                      <FormattedMessage id={build.name} />
+                    {architectureIndex === 0 &&
+                      <td rowSpan={build.architectures.length}>
+                        <FormattedMessage id={build.name} />
+                      </td>
+                    }
+
+                    <td>{architecture.name}</td>
+
+                    <td>
+                      <a href={architecture.download}>
+                        <FormattedMessage id="downloads.wallet.download" />
+                        &nbsp;
+                        ({architecture.filetype})
+                      </a>
                     </td>
-                  }
 
-                  <td>{architecture.name}</td>
+                    <td>
+                      <a href={architecture.torrent}>
+                        <FormattedMessage id="downloads.wallet.torrent" />
+                      </a>
+                    </td>
 
-                  <td>
-                    <a href={architecture.download}>
-                      <FormattedMessage id="downloads.wallet.download" />
-                      &nbsp;
-                      ({architecture.filetype})
-                    </a>
-                  </td>
-
-                  <td>
-                    <a href={architecture.torrent}>
-                      <FormattedMessage id="downloads.wallet.torrent" />
-                    </a>
-                  </td>
-
-                  <td>
-                    <Text as="span" color="gray.7" heavy>
-                      {architecture.filesize}
-                    </Text>
-                  </td>
-                </tr>
-              )),
-            ),
-          )}
+                    <td>
+                      <Text as="span" color="gray.7" heavy>
+                        {architecture.filesize}
+                      </Text>
+                    </td>
+                  </tr>
+                )),
+              ),
+            )}
+          </tbody>
         </Table>
       </TableWrapper>
     </Container>
