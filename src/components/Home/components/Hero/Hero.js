@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Flex, Box } from 'grid-styled';
+import { Flag } from 'flag';
 
 import { COLORS } from 'config';
 import media from 'utils/media';
@@ -39,8 +40,14 @@ export default () => (
       <Box>
         <Introduction />
       </Box>
+
       <Box>
-        <Announcement />
+        <Flag
+          name="announcement"
+          render={() => (
+            <Announcement />
+          )}
+        />
       </Box>
     </StyledFlex>
   </Hero>

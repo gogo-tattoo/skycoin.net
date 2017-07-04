@@ -27,6 +27,7 @@ export const BOX_SHADOWS = {
 };
 
 export const FLAGS = {
+  announcement: false,
   chinese: false,
   russian: false,
   timeline: false,
