@@ -1,8 +1,4 @@
 export default [{
-  quarter: 'home.roadmap.timeline.distribution.quarter',
-  year: 'home.roadmap.timeline.distribution.year',
-  content: 'home.roadmap.timeline.distribution.content',
-}, {
   quarter: 'home.roadmap.timeline.network.quarter',
   year: 'home.roadmap.timeline.network.year',
   content: 'home.roadmap.timeline.network.content',

@@ -25,7 +25,7 @@ export default () => (
   <Container>
     <Flex wrap >
       <Box width={[1 / 1, 1 / 2]} pr={[0, 4, 4]}>
-        <Box width={[1 / 1, 1 / 1, 5 / 6]} pt={[0, 0, 7]}>
+        <Box width={[1 / 1, 1 / 1, 5 / 6]} py={[0, 0, 7]}>
           <Heading heavy as="h2" my={[4, 5]} fontSize={[5, 6]} color="black">
             <FormattedMessage id="home.roadmap.heading" />
           </Heading>
