@@ -104,6 +104,29 @@ export default {
       },
     },
   },
+  downloads: {
+    title: 'Downloads',
+    description: 'Download Skycoin Wallet, whitepapers, and infographics.',
+    wallet: {
+      heading: 'Wallet',
+      lead: 'For simple use, download the Desktop wallet. For advanced use, or slow connections, the CLI wallet provides a UI that runs directly in your browser.',
+      macos: 'MacOS',
+      linux: 'Linux',
+      windows: 'Windows',
+      withElectron: 'Desktop',
+      withoutElectron: 'CLI',
+      download: 'Download',
+      torrent: 'Torrent',
+    },
+    whitepapers: {
+      heading: 'Whitepapers',
+      download: 'Download',
+    },
+    infographics: {
+      heading: 'Infographics',
+      download: 'Download',
+    },
+  },
   distribution: {
     title: 'Coin Distribution',
     description: 'As coins aren’t mined, Skycoin distribution is unlike that of a standard token or asset. To ensure continued development in a project that will take many years to complete coins are released in a scheme similar to that of a standard company, with the first batches going to early developers and investors.',
