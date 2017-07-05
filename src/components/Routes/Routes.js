@@ -17,6 +17,7 @@ const Routes = ({ match }) => {
       <Redirect from={`${prefix}infographics.html`} to={`${prefix}downloads#infographics`} />
       <Redirect from={`${prefix}downloads.html`} to={`${prefix}downloads`} />
       <Redirect from={`${prefix}faq.html`} to={`${prefix}`} />
+      <Redirect from={`${prefix}index.html`} to={`${prefix}`} />
       <Route path={`${prefix}*`} component={NotFound} />
     </Switch>
   );
