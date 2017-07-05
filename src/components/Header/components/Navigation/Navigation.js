@@ -57,7 +57,11 @@ const Navigation = ({ white }) => (
     <StyledLink white={white} to="downloads">
       <FormattedMessage id="header.navigation.downloads" />
     </StyledLink>
-    
+
+    <StyledLink white={white} href="http://explorer.skycoin.net/blocks">
+      <FormattedMessage id="header.navigation.explorer" />
+    </StyledLink>
+
     <InlineHide xs sm>
       <Buy color={white ? 'white' : 'base'} pill outlined>
         <FormattedMessage id="header.navigation.buy" />

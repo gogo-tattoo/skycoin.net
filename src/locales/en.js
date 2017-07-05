@@ -3,7 +3,7 @@ export default {
     navigation: {
       whitepapers: 'Whitepapers',
       downloads: 'Downloads',
-      blog: 'Blog',
+      explorer: 'Explorer',
       buy: 'Buy Skycoin',
     },
   },
