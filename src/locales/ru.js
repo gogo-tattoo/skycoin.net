@@ -1,10 +1,10 @@
 export default {
   header: {
     navigation: {
-      whitepapers: 'Whitepapers',
-      downloads: 'Downloads',
-      blog: 'Blog',
-      buy: 'Buy Skycoin',
+      whitepapers: 'Технические документы',
+      downloads: 'Скачать',
+      blog: 'Блог',
+      buy: 'Купить Skycoin',
     },
   },
   footer: {
