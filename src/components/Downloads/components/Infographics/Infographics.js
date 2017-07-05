@@ -12,7 +12,7 @@ import downloads from './downloads';
 export default () => (
   <Container>
     <Box width={[1 / 1, 1 / 1, 2 / 3]} my={[5, 7]}>
-      <Heading heavy as="h2" fontSize={[5, 6]} color="black" mb={[4, 6]}>
+      <Heading heavy as="h2" fontSize={[5, 6]} color="black" mb={[4, 6]} id="infographics">
         <FormattedMessage id="downloads.infographics.heading" />
       </Heading>
     </Box>
