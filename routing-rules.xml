@@ -17,7 +17,7 @@
   </RoutingRule>
   <RoutingRule>
     <Condition>
-      <KeyPrefixEquals>faqs.html</KeyPrefixEquals>
+      <KeyPrefixEquals>faq.html</KeyPrefixEquals>
     </Condition>
     <Redirect>
       <ReplaceKeyWith></ReplaceKeyWith>
