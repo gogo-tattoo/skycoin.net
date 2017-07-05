@@ -49,7 +49,7 @@ export default {
     about: {
       heading: 'What is Skycoin?',
       lead: 'Skycoin is a third-generation crypto asset, designed and developed to solve Bitcoin’s speed and security issues. With transactions in mere seconds, native support for CoinJoin and a new consensus algorithm that eliminates centralization and 51% attacks, Skycoin aims to alleviate any concerns over crypto, making it accessible anyone wishing to invest in the future of money.',
-      whitepaper: 'Read the whitepaper',
+      whitepaper: 'Whitepapers',
       speed: {
         heading: 'Speed',
         body: 'We built Skycoin to compete with credit cards and services like AliPay/Apple Pay. Transactions happen in seconds, not minutes.',
