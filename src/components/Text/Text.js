@@ -9,6 +9,7 @@ import { FONT_FAMILIES } from 'config';
 const Text = createComponentFromTagProp({
   tag: 'p',
   prop: 'as',
+  propsToOmit: ['fontSize', 'color', 'mt', 'mb', 'my', 'heavy', 'caps'],
 });
 
 export default styled(Text)`

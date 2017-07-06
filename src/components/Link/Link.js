@@ -11,7 +11,7 @@ const getURL = (match, url) => removeTrailingSlash(
 
 const filterProps = props =>
   omit(props, ['location', 'history', 'staticContext', 'pill', 'outlined',
-    'white', 'bg', 'big', 'ml', 'color', 'fontSize']);
+    'white', 'bg', 'big', 'color', 'fontSize', 'm', 'ml', 'mr', 'mt', 'mb']);
 
 const Link = ({ to, href, match, children, ...props }) => {
   if (to) {

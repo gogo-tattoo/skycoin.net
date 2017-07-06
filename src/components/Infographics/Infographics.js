@@ -38,7 +38,7 @@ const Infographics = ({ intl }) => (
 
     <Wrapper>
       <Container>
-        {map(slides, slide => <Slide src={slide} />)}
+        {map(slides, (slide, i) => <Slide src={slide} key={i} />)}
       </Container>
     </Wrapper>
 
