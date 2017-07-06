@@ -5419,10 +5419,6 @@ remove-trailing-separator@^1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/remove-trailing-separator/-/remove-trailing-separator-1.0.2.tgz#69b062d978727ad14dc6b56ba4ab772fd8d70511"
 
-remove-trailing-slash@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/remove-trailing-slash/-/remove-trailing-slash-0.1.0.tgz#1498e5df0984c27e49b76ebf06887ca2d01150d2"
-
 renderkid@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/renderkid/-/renderkid-2.0.1.tgz#898cabfc8bede4b7b91135a3ffd323e58c0db319"
@@ -5956,16 +5952,12 @@ styled-components@^2.0.1, styled-components@^2.1.0:
     stylis "^3.0.19"
     supports-color "^3.2.3"
 
-styled-system@1.0.0-4:
+styled-system@1.0.0-4, styled-system@^1.0.0-2:
   version "1.0.0-4"
   resolved "https://registry.yarnpkg.com/styled-system/-/styled-system-1.0.0-4.tgz#cc881fb392b794f3619f9f1300e254e5711dac27"
   dependencies:
     glamorous "^3.23.2"
     styled-components "^2.1.0"
-
-styled-system@^1.0.0-2:
-  version "1.0.0-7"
-  resolved "https://registry.yarnpkg.com/styled-system/-/styled-system-1.0.0-7.tgz#ac24b9fce87f5823baa9d6010e7246c4bba4fcbf"
 
 stylis@^3.0.19:
   version "3.1.9"

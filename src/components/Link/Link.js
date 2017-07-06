@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 import { Link as RouterLink, withRouter } from 'react-router-dom';
 import join from 'join-path';
 import omit from 'lodash/omit';
-import removeTrailingSlash from 'remove-trailing-slash';
+import trimEnd from 'lodash/trimEnd';
 
-const getURL = (match, url) => removeTrailingSlash(
-  url.includes('://') ? url : join('/', match.params.locale, url),
-);
+const getURL = (match, url) => `${trimEnd(
+  url.includes('://') ? url : join('/', match.params.locale, url), '/',
+)}/`;
 
 const filterProps = props =>
   omit(props, ['location', 'history', 'staticContext', 'pill', 'outlined',
