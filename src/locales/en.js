@@ -13,6 +13,7 @@ export default {
     community: 'Community',
     wallet: 'Get Wallet',
     buy: 'Buy Skycoin',
+    infographics: 'Infographics',
     whitepapers: 'Whitepapers',
     blockchain: 'Blockchain Explorer',
     github: 'Github',
@@ -101,7 +102,7 @@ export default {
   },
   downloads: {
     title: 'Downloads',
-    description: 'Download Skycoin Wallet, whitepapers, and infographics.',
+    description: 'Download Skycoin wallet and whitepapers.',
     wallet: {
       heading: 'Wallet',
       lead: 'For simple use, download the Desktop wallet. For advanced use, or slow connections, the CLI wallet provides a UI that runs directly in your browser.',
@@ -117,10 +118,9 @@ export default {
       heading: 'Whitepapers',
       download: 'Download',
     },
-    infographics: {
-      heading: 'Infographics',
-      download: 'Download',
-    },
+  },
+  infographics: {
+    title: 'Infographics',
   },
   distribution: {
     title: 'Coin Distribution',

@@ -28,7 +28,7 @@
       <KeyPrefixEquals>infographics.html</KeyPrefixEquals>
     </Condition>
     <Redirect>
-      <ReplaceKeyWith>downloads#infographics</ReplaceKeyWith>
+      <ReplaceKeyWith>infographics</ReplaceKeyWith>
     </Redirect>
   </RoutingRule>
 </RoutingRules>
