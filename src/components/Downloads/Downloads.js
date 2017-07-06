@@ -8,7 +8,6 @@ import Header from 'components/Header';
 import Footer from 'components/Footer';
 import Wallet from './components/Wallet';
 import Whitepapers from './components/Whitepapers';
-import Infographics from './components/Infographics';
 
 const Downloads = ({ intl }) => (
   <div>
@@ -23,7 +22,6 @@ const Downloads = ({ intl }) => (
 
     <Wallet />
     <Whitepapers />
-    <Infographics />
 
     <GetStarted />
     <Footer />

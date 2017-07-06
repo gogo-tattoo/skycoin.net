@@ -3,7 +3,7 @@ export default {
     navigation: {
       whitepapers: 'Whitepapers',
       downloads: 'Downloads',
-      blog: 'Blog',
+      explorer: 'Explorer',
       buy: 'Buy Skycoin',
     },
   },
@@ -13,6 +13,7 @@ export default {
     community: 'Community',
     wallet: 'Get Wallet',
     buy: 'Buy Skycoin',
+    infographics: 'Infographics',
     whitepapers: 'Whitepapers',
     blockchain: 'Blockchain Explorer',
     github: 'Github',
@@ -49,7 +50,7 @@ export default {
     about: {
       heading: 'What is Skycoin?',
       lead: 'Skycoin is a third-generation crypto asset, designed and developed to solve Bitcoin’s speed and security issues. With transactions in mere seconds, native support for CoinJoin and a new consensus algorithm that eliminates centralization and 51% attacks, Skycoin aims to alleviate any concerns over crypto, making it accessible anyone wishing to invest in the future of money.',
-      whitepaper: 'Read the whitepaper',
+      whitepaper: 'Whitepapers',
       speed: {
         heading: 'Speed',
         body: 'We built Skycoin to compete with credit cards and services like AliPay/Apple Pay. Transactions happen in seconds, not minutes.',
@@ -87,13 +88,13 @@ export default {
       communityLink: 'Join the community',
       timeline: {
         network: {
-          quarter: 'Q2',
-          year: 'FY18',
+          quarter: 'Q3',
+          year: '2017',
           content: 'Launch of the first downloadable network node, users will be able to earn coins for powering the network.',
         },
         applications: {
           quarter: 'Q3',
-          year: 'FY18',
+          year: '2017',
           content: 'The launch of our first applications on the Skywire Network: a decentralised, Redditesque, social media platform and VPN service.',
         },
       },
@@ -101,10 +102,11 @@ export default {
   },
   downloads: {
     title: 'Downloads',
-    description: 'Download Skycoin Wallet, whitepapers, and infographics.',
+    description: 'Download Skycoin wallet and whitepapers.',
     wallet: {
       heading: 'Wallet',
       lead: 'For simple use, download the Desktop wallet. For advanced use, or slow connections, the CLI wallet provides a UI that runs directly in your browser.',
+      build: 'The current build is {version}.',
       macos: 'MacOS',
       linux: 'Linux',
       windows: 'Windows',
@@ -117,10 +119,9 @@ export default {
       heading: 'Whitepapers',
       download: 'Download',
     },
-    infographics: {
-      heading: 'Infographics',
-      download: 'Download',
-    },
+  },
+  infographics: {
+    title: 'Infographics',
   },
   distribution: {
     title: 'Coin Distribution',

@@ -5,7 +5,11 @@ import { withRouter } from 'react-router-dom';
 class ScrollToTop extends React.Component {
   componentDidUpdate(prevProps) {
     if (this.props.location !== prevProps.location) {
-      window.scrollTo(0, 0);
+      if (this.props.location.hash) {
+        document.querySelector(this.props.location.hash).scrollIntoView();
+      } else {
+        window.scrollTo(0, 0);
+      }
     }
   }
 
@@ -16,7 +20,9 @@ class ScrollToTop extends React.Component {
 
 ScrollToTop.propTypes = {
   children: PropTypes.element.isRequired,
-  location: PropTypes.shape({}).isRequired,
+  location: PropTypes.shape({
+    hash: PropTypes.string,
+  }).isRequired,
 };
 
 export default withRouter(ScrollToTop);

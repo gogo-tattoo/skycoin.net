@@ -58,11 +58,11 @@ const List = ({ heading, links }) => (
 
 List.propTypes = {
   heading: PropTypes.string.isRequired,
-  links: PropTypes.shape({
+  links: PropTypes.arrayOf(PropTypes.shape({
     buy: PropTypes.bool,
     to: PropTypes.string,
     label: PropTypes.string.isRequired,
-  }).isRequired,
+  })).isRequired,
 };
 
 export default List;

@@ -1,0 +1,11 @@
+export { default as slide01 } from './01.jpg';
+export { default as slide02 } from './02.jpg';
+export { default as slide03 } from './03.jpg';
+export { default as slide04 } from './04.jpg';
+export { default as slide05 } from './05.jpg';
+export { default as slide06 } from './06.jpg';
+export { default as slide07 } from './07.jpg';
+export { default as slide08 } from './08.jpg';
+export { default as slide09 } from './09.jpg';
+export { default as slide10 } from './10.jpg';
+export { default as slide11 } from './11.jpg';

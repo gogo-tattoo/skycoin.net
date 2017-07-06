@@ -2,22 +2,31 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link as RouterLink, withRouter } from 'react-router-dom';
 import join from 'join-path';
+import omit from 'lodash/omit';
 import removeTrailingSlash from 'remove-trailing-slash';
 
 const getURL = (match, url) => removeTrailingSlash(
   url.includes('://') ? url : join('/', match.params.locale, url),
 );
 
+const filterProps = props =>
+  omit(props, ['location', 'history', 'staticContext', 'pill', 'outlined',
+    'white', 'bg', 'big', 'color', 'fontSize', 'm', 'ml', 'mr', 'mt', 'mb']);
+
 const Link = ({ to, href, match, children, ...props }) => {
   if (to) {
-    return <RouterLink to={getURL(match, to)} {...props}>{children}</RouterLink>;
+    return (
+      <RouterLink to={getURL(match, to)} {...filterProps(props)}>
+        {children}
+      </RouterLink>
+    );
   }
 
   if (href) {
-    return <a href={getURL(match, href)} {...props}>{children}</a>;
+    return <a href={getURL(match, href)} {...filterProps(props)}>{children}</a>;
   }
 
-  return <a {...props}>{children}</a>;
+  return <a {...filterProps(props)}>{children}</a>;
 };
 
 Link.propTypes = {

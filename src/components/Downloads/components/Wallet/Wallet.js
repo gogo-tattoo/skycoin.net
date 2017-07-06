@@ -10,7 +10,7 @@ import Heading from 'components/Heading';
 import Text from 'components/Text';
 import Table, { TableWrapper } from 'components/Table';
 
-import downloads from './downloads';
+import { downloads, version } from './downloads';
 import * as icons from './icons';
 
 const Wallet = styled.div`
@@ -35,15 +35,20 @@ export default () => (
         <Text fontSize={[3, 3, 4]} color="black" heavy mb={[5, 7]}>
           <FormattedMessage id="downloads.wallet.lead" />
         </Text>
+
+        <Text fontSize={[3, 3, 4]} color="gray.9" heavy>
+          <FormattedMessage id="downloads.wallet.build" values={{ version }} />
+        </Text>
       </Box>
 
       <TableWrapper>
         <Table>
           <tbody>
-            {downloads.map(({ platform, icon, builds }) =>
+            {/* TODO: refactor or move into another component */}
+            {downloads.map(({ platform, icon, builds }, platformIndex) =>
               builds.map((build, buildIndex) =>
                 build.architectures.map((architecture, architectureIndex) => (
-                  <tr>
+                  <tr key={`${platformIndex}-${buildIndex}-${architectureIndex}`}>
                     {buildIndex === 0 &&
                       <th rowSpan={builds.reduce((a, { architectures: b }) => a + b.length, 0)}>
                         <Icon src={icons[icon]} />
@@ -71,6 +76,12 @@ export default () => (
                       <a href={architecture.torrent}>
                         <FormattedMessage id="downloads.wallet.torrent" />
                       </a>
+                    </td>
+
+                    <td>
+                      <Text as="span" color="gray.7" heavy>
+                        {architecture.version}
+                      </Text>
                     </td>
 
                     <td>

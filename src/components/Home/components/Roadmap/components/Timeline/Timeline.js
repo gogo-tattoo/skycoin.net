@@ -29,6 +29,6 @@ const Timeline = styled.div`
 
 export default () => (
   <Timeline>
-    {content.map(props => <TimelineItem {...props} />)}
+    {content.map((props, i) => <TimelineItem key={i} {...props} />)}
   </Timeline>
 );

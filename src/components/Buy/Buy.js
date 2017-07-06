@@ -75,6 +75,7 @@ class Buy extends React.Component {
       <Wrapper>
         <Component onClick={this.openModal} {...rest} />
         <StyledModal
+          contentLabel="Buy Skycoin"
           style={styles}
           isOpen={this.state.modalIsOpen}
           onRequestClose={this.closeModal}

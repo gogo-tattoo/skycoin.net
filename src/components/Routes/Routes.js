@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, Redirect } from 'react-router-dom';
 
 import Home from '../Home';
 import Downloads from '../Downloads';
+import Infographics from '../Infographics';
 import NotFound from '../NotFound';
 
 const Routes = ({ match }) => {
@@ -13,6 +14,12 @@ const Routes = ({ match }) => {
     <Switch>
       <Route path={`${prefix}`} exact component={Home} />
       <Route path={`${prefix}downloads`} exact component={Downloads} />
+      <Route path={`${prefix}infographics`} exact component={Infographics} />
+      <Redirect from={`${prefix}whitepapers.html`} to={`${prefix}downloads#whitepapers`} />
+      <Redirect from={`${prefix}infographics.html`} to={`${prefix}infographics`} />
+      <Redirect from={`${prefix}downloads.html`} to={`${prefix}downloads`} />
+      <Redirect from={`${prefix}faq.html`} to={`${prefix}`} />
+      <Redirect from={`${prefix}index.html`} to={`${prefix}`} />
       <Route path={`${prefix}*`} component={NotFound} />
     </Switch>
   );

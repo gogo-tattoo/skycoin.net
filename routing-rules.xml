@@ -1,0 +1,34 @@
+<RoutingRules>
+  <RoutingRule>
+    <Condition>
+      <KeyPrefixEquals>downloads.html</KeyPrefixEquals>
+    </Condition>
+    <Redirect>
+      <ReplaceKeyWith>downloads</ReplaceKeyWith>
+    </Redirect>
+  </RoutingRule>
+  <RoutingRule>
+    <Condition>
+      <KeyPrefixEquals>faq.html</KeyPrefixEquals>
+    </Condition>
+    <Redirect>
+      <ReplaceKeyWith></ReplaceKeyWith>
+    </Redirect>
+  </RoutingRule>
+  <RoutingRule>
+    <Condition>
+      <KeyPrefixEquals>whitepapers.html</KeyPrefixEquals>
+    </Condition>
+    <Redirect>
+      <ReplaceKeyWith>downloads#whitepapers</ReplaceKeyWith>
+    </Redirect>
+  </RoutingRule>
+  <RoutingRule>
+    <Condition>
+      <KeyPrefixEquals>infographics.html</KeyPrefixEquals>
+    </Condition>
+    <Redirect>
+      <ReplaceKeyWith>infographics</ReplaceKeyWith>
+    </Redirect>
+  </RoutingRule>
+</RoutingRules>
