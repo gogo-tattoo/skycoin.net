@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Flex, Box } from 'grid-styled';
+import { Box } from 'grid-styled';
 import { FormattedMessage } from 'react-intl';
 import { rem } from 'polished';
 
@@ -10,8 +10,6 @@ import Container from 'components/Container';
 import Heading from 'components/Heading';
 import Text from 'components/Text';
 
-import Feature from './components/Feature';
-import features from './content';
 import background from './background.png';
 
 // TODO: update background image to use global colors
@@ -23,7 +21,7 @@ const About = styled.div`
 export default () => (
   <About>
     <Container>
-      <Box width={[1 / 1, 1 / 1, 2 / 3]} mb={[8, 11]} pt={[7, 10]}>
+      <Box py={[7, 8]}>
         <Heading heavy as="h2" fontSize={[5, 6]} color="black" mb={[4, 6]}>
           <FormattedMessage id="home.about.heading" />
         </Heading>
@@ -36,14 +34,6 @@ export default () => (
           <FormattedMessage id="home.about.whitepaper" />
         </Button>
       </Box>
-
-      <Flex wrap>
-        {features.map(({ heading, body, icon }, index) => (
-          <Box width={[1 / 1, 1 / 2]} mb={[2, 6]} key={index}>
-            <Feature heading={heading} body={body} icon={icon} />
-          </Box>
-        ))}
-      </Flex>
     </Container>
   </About>
 );

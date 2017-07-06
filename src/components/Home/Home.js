@@ -8,7 +8,7 @@ import Footer from 'components/Footer';
 import Hero from './components/Hero';
 import About from './components/About';
 import Network from './components/Network';
-import Distribution from './components/Distribution';
+import Features from './components/Features';
 import Roadmap from './components/Roadmap';
 
 const Home = ({ intl }) => (
@@ -24,8 +24,8 @@ const Home = ({ intl }) => (
     <Hero />
     <About />
     <Network />
-    <Distribution />
     <Roadmap />
+    <Features />
     <GetStarted />
     <Footer />
   </div>

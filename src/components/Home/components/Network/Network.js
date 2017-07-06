@@ -21,7 +21,7 @@ const Graphic = styled.img.attrs({
 export default () => (
   <div>
     <Container>
-      <Flex py={[7, 9]} align="center">
+      <Flex py={[7, 8]} align="center">
         <Box width={[1 / 1, 2 / 3]}>
           <Label>
             <FormattedMessage id="home.network.label" />
@@ -31,7 +31,7 @@ export default () => (
             <FormattedMessage id="home.network.heading" />
           </Heading>
 
-          <Text fontSize={[3, 3, 4]} mb={[4, 5]} color="black" heavy>
+          <Text fontSize={[3, 3, 4]} mb={0} color="black" heavy>
             <FormattedMessage id="home.network.body" />
           </Text>
 

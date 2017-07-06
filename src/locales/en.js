@@ -37,7 +37,7 @@ export default {
   },
   home: {
     title: 'Foundations for the new internet',
-    description: 'Skycoin is a third-generation crypto asset, designed and developed to solve Bitcoin’s speed and security issues.',
+    description: 'Skycoin is designed to implement Satoshi\'s original vision and fix the problems with Bitcoin.',
     hero: {
       heading: 'Foundations for{break}the new internet.',
       buy: 'Buy Skycoin',
@@ -49,7 +49,7 @@ export default {
     },
     about: {
       heading: 'What is Skycoin?',
-      lead: 'Skycoin is a third-generation crypto asset, designed and developed to solve Bitcoin’s speed and security issues. With transactions in mere seconds, native support for CoinJoin and a new consensus algorithm that eliminates centralization and 51% attacks, Skycoin aims to alleviate any concerns over crypto, making it accessible anyone wishing to invest in the future of money.',
+      lead: 'Skycoin is designed to implement Satoshi\'s original vision and fix the problems with Bitcoin.',
       whitepaper: 'Whitepapers',
       speed: {
         heading: 'Speed',
@@ -70,8 +70,8 @@ export default {
     },
     network: {
       label: 'Digging deeper',
-      heading: 'Network Consensus',
-      body: 'The concentration of power into a handful of mining pools is the greatest threat to the security of existing crypto assets. The power usage of existing consensus algorithm is also unsubstainable and Bitcoin’s PoW algorithm uses enough electricity to power 50,000 homes, merely to process 6 transactions a second. This cost of millions of dollars per month is passed to the users. Skycoin uses a new consensus algorithm, Network Consensus which requires no mining.',
+      heading: 'Revolutionary new consensus algorithms',
+      body: 'Satoshi originally intended the control of the Bitcoin network to be decentralized over hundreds of thousands of computers. Today, the Bitcoin network  is completely controlled by three mining pools. Bitcoin is no longer decentralized. Skycoin\'s consensus algorithm is designed to achieve true decentralization of blockchain consensus.',
       link: 'Learn about Network Consensus',
     },
     distribution: {

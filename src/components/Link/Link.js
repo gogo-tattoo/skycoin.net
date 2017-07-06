@@ -5,9 +5,11 @@ import join from 'join-path';
 import omit from 'lodash/omit';
 import trimEnd from 'lodash/trimEnd';
 
-const getURL = (match, url) => `${trimEnd(
-  url.includes('://') ? url : join('/', match.params.locale, url), '/',
-)}/`;
+const getURL = (match, url) => trimEnd(
+  url.includes('://')
+    ? url
+    : join('/', match.params.locale, url, url.includes('#') ? '' : '/'),
+  );
 
 const filterProps = props =>
   omit(props, ['location', 'history', 'staticContext', 'pill', 'outlined',

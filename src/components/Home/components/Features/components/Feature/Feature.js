@@ -27,7 +27,7 @@ const Feature = ({ heading, icon, body }) => (
         <FormattedMessage id={heading} />
       </Heading>
 
-      <Text fontSize={[2, 3]} color="gray.9">
+      <Text fontSize={[2, 3]} mb={0} color="gray.9">
         <FormattedMessage id={body} />
       </Text>
     </Box>
