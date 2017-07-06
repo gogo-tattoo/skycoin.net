@@ -36,7 +36,7 @@ export default () => (
           <FormattedMessage id="downloads.wallet.lead" />
         </Text>
 
-        <Text fontSize={[2, 3]} color="gray.9" heavy>
+        <Text fontSize={[3, 3, 4]} color="gray.9" heavy>
           <FormattedMessage id="downloads.wallet.build" values={{ version }} />
         </Text>
       </Box>
@@ -44,10 +44,11 @@ export default () => (
       <TableWrapper>
         <Table>
           <tbody>
-            {downloads.map(({ platform, icon, builds }) =>
+            {/* TODO: refactor or move into another component */}
+            {downloads.map(({ platform, icon, builds }, platformIndex) =>
               builds.map((build, buildIndex) =>
                 build.architectures.map((architecture, architectureIndex) => (
-                  <tr>
+                  <tr key={`${platformIndex}-${buildIndex}-${architectureIndex}`}>
                     {buildIndex === 0 &&
                       <th rowSpan={builds.reduce((a, { architectures: b }) => a + b.length, 0)}>
                         <Icon src={icons[icon]} />

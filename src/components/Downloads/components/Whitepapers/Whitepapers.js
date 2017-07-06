@@ -20,8 +20,8 @@ export default () => (
     <TableWrapper>
       <Table>
         <tbody>
-          {downloads.map(({ name, download, filetype, filesize }) => (
-            <tr>
+          {downloads.map(({ name, download, filetype, filesize }, i) => (
+            <tr key={i}>
               <td>{name}</td>
 
               <td>
