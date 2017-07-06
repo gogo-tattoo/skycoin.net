@@ -87,13 +87,13 @@ export default {
       communityLink: 'Join the community',
       timeline: {
         network: {
-          quarter: 'Q2',
-          year: 'FY18',
+          quarter: 'Q3',
+          year: '2017',
           content: 'Launch of the first downloadable network node, users will be able to earn coins for powering the network.',
         },
         applications: {
           quarter: 'Q3',
-          year: 'FY18',
+          year: '2017',
           content: 'The launch of our first applications on the Skywire Network: a decentralised, Redditesque, social media platform and VPN service.',
         },
       },
