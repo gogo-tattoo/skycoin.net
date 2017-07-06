@@ -10,7 +10,7 @@ import Heading from 'components/Heading';
 import Text from 'components/Text';
 import Table, { TableWrapper } from 'components/Table';
 
-import downloads from './downloads';
+import { downloads, version } from './downloads';
 import * as icons from './icons';
 
 const Wallet = styled.div`
@@ -34,6 +34,10 @@ export default () => (
 
         <Text fontSize={[3, 3, 4]} color="black" heavy mb={[5, 7]}>
           <FormattedMessage id="downloads.wallet.lead" />
+        </Text>
+
+        <Text fontSize={[2, 3]} color="gray.9" heavy>
+          <FormattedMessage id="downloads.wallet.build" values={{ version }} />
         </Text>
       </Box>
 
@@ -71,6 +75,12 @@ export default () => (
                       <a href={architecture.torrent}>
                         <FormattedMessage id="downloads.wallet.torrent" />
                       </a>
+                    </td>
+
+                    <td>
+                      <Text as="span" color="gray.7" heavy>
+                        {architecture.version}
+                      </Text>
                     </td>
 
                     <td>

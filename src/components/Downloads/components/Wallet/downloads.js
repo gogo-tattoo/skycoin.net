@@ -1,4 +1,5 @@
-export default [{
+export const version = 'v0.18.0';
+export const downloads = [{
   platform: 'downloads.wallet.macos',
   icon: 'macos',
   builds: [{

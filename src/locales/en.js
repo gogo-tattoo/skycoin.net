@@ -106,6 +106,7 @@ export default {
     wallet: {
       heading: 'Wallet',
       lead: 'For simple use, download the Desktop wallet. For advanced use, or slow connections, the CLI wallet provides a UI that runs directly in your browser.',
+      build: 'The current build is {version}.',
       macos: 'MacOS',
       linux: 'Linux',
       windows: 'Windows',
