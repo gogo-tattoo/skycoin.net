@@ -106,6 +106,7 @@ export default {
     wallet: {
       heading: 'Кошелёк',
       lead: 'Для простейшего использования скачайте the Desktop кошелёк. Для продвинутого использования или медленных соединений кошелёк для командной строки (CLI) предоставляет интерфейс, доступный прямо в вашем браузере.',
+      build: 'The current build is {version}.',
       macos: 'MacOS',
       linux: 'Linux',
       windows: 'Windows',
