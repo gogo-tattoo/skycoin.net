@@ -74,11 +74,9 @@ export default {
       body: 'Satoshi originally intended the control of the Bitcoin network to be decentralized over hundreds of thousands of computers. Today, the Bitcoin network  is completely controlled by three mining pools. Bitcoin is no longer decentralized. Skycoin\'s consensus algorithm is designed to achieve true decentralization of blockchain consensus.',
       link: 'Learn about Network Consensus',
     },
-    distribution: {
-      label: 'Digging deeper',
-      heading: 'Distribution',
-      body: 'As coins aren’t mined, Skycoin distribution is unlike that of mined crypto currencies. Instead of coins going to the miners, new Skycoin are distributed to contributors, developers and investors. Skycoin’s distribution is designed to get coins in the hands of the users and people building out the ecosystem, instead of giving all the new coins out to miners.',
-      link: 'Learn about distribution',
+    miner: {
+      label: 'Coming soon',
+      heading: 'Skywire Miner: hardware for the next internet',
     },
     roadmap: {
       heading: 'Roadmap',

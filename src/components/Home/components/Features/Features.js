@@ -13,7 +13,7 @@ import background from './background.png';
 // TODO: update background image to use global colors
 const Features = styled.div`
   background: url(${background}) repeat-x top center / ${rem(48)} #f7f7f7;
-  border-top: 2px solid ${COLORS.gray[2]};
+  border-top: 2px solid ${COLORS.gray[1]};
 `;
 
 export default () => (

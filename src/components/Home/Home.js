@@ -8,6 +8,7 @@ import Footer from 'components/Footer';
 import Hero from './components/Hero';
 import About from './components/About';
 import Network from './components/Network';
+import Miner from './components/Miner';
 import Features from './components/Features';
 import Roadmap from './components/Roadmap';
 
@@ -24,6 +25,7 @@ const Home = ({ intl }) => (
     <Hero />
     <About />
     <Network />
+    <Miner />
     <Roadmap />
     <Features />
     <GetStarted />
