@@ -14,7 +14,7 @@ export default [{
   heading: 'footer.explore',
   links: [{
     label: 'footer.whitepapers',
-    to: 'downloads#whitepapers',
+    to: 'downloads/#whitepapers',
   }, {
     label: 'footer.blockchain',
     href: 'http://explorer.skycoin.net/blocks',

@@ -30,7 +30,7 @@ export default () => (
           <FormattedMessage id="home.about.lead" />
         </Text>
 
-        <Button to="downloads#whitepapers" color="white" bg="base" big fontSize={[1, 3]}>
+        <Button to="downloads/#whitepapers" color="white" bg="base" big fontSize={[1, 3]}>
           <FormattedMessage id="home.about.whitepaper" />
         </Button>
       </Box>

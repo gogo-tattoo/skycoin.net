@@ -50,7 +50,7 @@ const InlineHide = Hide.extend`
 
 const Navigation = ({ white }) => (
   <Wrapper>
-    <StyledLink white={white} to="downloads#whitepapers">
+    <StyledLink white={white} to="downloads/#whitepapers">
       <FormattedMessage id="header.navigation.whitepapers" />
     </StyledLink>
 

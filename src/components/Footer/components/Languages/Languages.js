@@ -28,13 +28,13 @@ export default () => (
     <Flag
       name="chinese"
       render={() => (
-        <Language><StyledLink to="/cn">中文</StyledLink></Language>
+        <Language><StyledLink to="/cn/">中文</StyledLink></Language>
       )}
     />
     <Flag
       name="russian"
       render={() => (
-        <Language><StyledLink to="/ru">Ру́сский</StyledLink></Language>
+        <Language><StyledLink to="/ru/">Ру́сский</StyledLink></Language>
       )}
     />
   </Languages>
