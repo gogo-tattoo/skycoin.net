@@ -57,7 +57,7 @@ $ yarn test -- --coverage
 3. Sync the build directory with the S3 bucket:
 
   ```shell
-  $ aws s3 sync build/ s3://bucket-name
+  $ aws s3 sync build/ s3://bucket-name --acl public-read
   ```
 
 See [this blog post](https://medium.com/@omgwtfmarc/deploying-create-react-app-to-s3-or-cloudfront-48dae4ce0af) for bucket setup and detailed deployment instructions.
