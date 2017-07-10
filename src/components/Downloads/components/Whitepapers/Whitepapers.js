@@ -1,13 +1,34 @@
 import React from 'react';
 import { Box } from 'grid-styled';
 import { FormattedMessage } from 'react-intl';
+import { rem } from 'polished';
 
 import Container from 'components/Container';
 import Heading from 'components/Heading';
 import Text from 'components/Text';
 import Table, { TableWrapper } from 'components/Table';
+import { COLORS, SPACE, BREAKPOINTS } from 'config';
 
 import downloads from './downloads';
+
+const StyledTable = Table.extend`
+  @media (max-width: ${BREAKPOINTS.sm}rem) {
+    min-width: 0;
+    border: 0;
+
+    tr {
+      display: block;
+      padding: ${rem(SPACE[4])} 0;
+      border-top: 1px solid ${COLORS.gray[1]};
+    }
+
+    td {
+      border: 0;
+      display: block;
+      height: auto;
+    }
+  }
+`;
 
 export default () => (
   <Container>
@@ -18,7 +39,7 @@ export default () => (
     </Box>
 
     <TableWrapper>
-      <Table>
+      <StyledTable>
         <tbody>
           {downloads.map(({ name, download, filetype, filesize }, i) => (
             <tr key={i}>
@@ -40,7 +61,7 @@ export default () => (
             </tr>
           ))}
         </tbody>
-      </Table>
+      </StyledTable>
     </TableWrapper>
   </Container>
 );
