@@ -76,7 +76,7 @@ export default {
     },
     miner: {
       label: 'Coming soon',
-      heading: 'Skywire Miner: hardware for the next internet',
+      heading: 'Skywire Miner: hardware for the new internet',
     },
     roadmap: {
       heading: 'План работ',
