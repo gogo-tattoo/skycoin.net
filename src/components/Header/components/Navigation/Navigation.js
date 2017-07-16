@@ -62,6 +62,10 @@ const Navigation = ({ white }) => (
       <FormattedMessage id="header.navigation.explorer" />
     </StyledLink>
 
+    <StyledLink white={white} href="http://blog.skycoin.net/blog" target="_blank">
+      <FormattedMessage id="header.navigation.blog" />
+    </StyledLink>
+
     <InlineHide xs sm>
       <Buy color={white ? 'white' : 'base'} pill outlined>
         <FormattedMessage id="header.navigation.buy" />
