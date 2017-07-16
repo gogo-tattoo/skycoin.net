@@ -52,7 +52,7 @@ export default {
         get: 'Get Wallet',
         blurb: 'Wallet allows you to hold and secure Skycoin.{break}It’s fast, secure, and free.',
       },
-      announcement: 'On July 24, 1% (1 million) of Skycoin will be sold at a fixed price of 0.02 BTC / SKY.',
+      announcement: 'On July 24, 1% (1 million) of Skycoin will be sold at a fixed price of 0.002 BTC / SKY.',
     },
     about: {
       heading: 'What is Skycoin?',
@@ -130,10 +130,10 @@ export default {
   },
   distribution: {
     title: 'Skycoin distribution event',
-    description: 'On July 24, 1% (1 million) of Skycoin will be sold at a fixed price of 0.02 BTC / SKY.',
+    description: 'On July 24, 1% (1 million) of Skycoin will be sold at a fixed price of 0.002 BTC / SKY.',
     hero: {
       heading: 'Skycoin distribution event',
-      lead: 'On July 24, 1% (1 million) of Skycoin will be sold at a fixed price of 0.02 BTC / SKY (500 SKY / BTC). This distribution event will stop on August 8 or when 1% (1 million) SKY sells out, whichever is sooner.',
+      lead: 'On July 24, 1% (1 million) of Skycoin will be sold at a fixed price of 0.002 BTC / SKY (500 SKY / BTC). This distribution event will stop on August 8 or when 1% (1 million) SKY sells out, whichever is sooner.',
       body: 'Check back to skycoin.net to participate in the event.',
     },
     countdown: {
