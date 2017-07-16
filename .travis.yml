@@ -15,5 +15,6 @@ deploy:
   local_dir: build
   skip_cleanup: true
   acl: public_read
+  cache_control: "no-cache"
   on:
     repo: skycoin/skycoin.net
