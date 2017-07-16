@@ -1,5 +1,7 @@
 # skycoin.net
 
+[![Build Status](https://travis-ci.org/skycoin/skycoin.net.svg?branch=master)](https://travis-ci.org/skycoin/skycoin.net)
+
 ## Setup
 
 1. Install [nvm](https://github.com/creationix/nvm).
