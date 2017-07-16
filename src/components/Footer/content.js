@@ -18,6 +18,9 @@ export default [{
   }, {
     label: 'footer.blockchain',
     href: 'http://explorer.skycoin.net/blocks',
+  }, {
+    label: 'footer.distribution',
+    to: 'distribution',
   }],
 }, {
   heading: 'footer.community',

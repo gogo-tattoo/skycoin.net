@@ -4,6 +4,7 @@ import { Flex, Box } from 'grid-styled';
 import { rem } from 'polished';
 import { FormattedMessage } from 'react-intl';
 
+import Link from 'components/Link';
 import Container from 'components/Container';
 import Text from 'components/Text';
 import megaphone from './megaphone.png';
@@ -11,6 +12,10 @@ import megaphone from './megaphone.png';
 const Announcement = styled.div`
   background-color: rgba(0, 0, 0, 0.25);
   width: 100%;
+`;
+
+const StyledLink = styled(Link)`
+  text-decoration: none;
 `;
 
 const Icon = styled.img.attrs({
@@ -22,17 +27,19 @@ const Icon = styled.img.attrs({
 export default () => (
   <Announcement>
     <Container>
-      <Flex align="center">
-        <Box mr={4}>
-          <Icon />
-        </Box>
+      <StyledLink to="distribution">
+        <Flex align="center">
+          <Box mr={4}>
+            <Icon />
+          </Box>
 
-        <Box>
-          <Text color="white" fontSize={[1, 3]} heavy py={4} m={0}>
-            <FormattedMessage id="home.hero.announcement" />
-          </Text>
-        </Box>
-      </Flex>
+          <Box>
+            <Text color="white" fontSize={[1, 3]} heavy py={4} m={0}>
+              <FormattedMessage id="home.hero.announcement" />
+            </Text>
+          </Box>
+        </Flex>
+      </StyledLink>
     </Container>
   </Announcement>
 );

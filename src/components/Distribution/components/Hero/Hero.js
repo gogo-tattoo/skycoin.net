@@ -49,10 +49,10 @@ export default () => (
             <Countdown />
 
             <Text fontSize={[3, 3, 4]} color="white" heavy my={[5, 7]}>
-              <FormattedMessage id="distribution.hero.lead" />
+              <FormattedHTMLMessage id="distribution.hero.lead" />
             </Text>
 
-            <Text fontSize={[3, 3, 4]} color="white" heavy mb={[5, 7]}>
+            <Text fontSize={[3, 3, 4]} color="white" heavy my={[5, 7]}>
               <FormattedHTMLMessage id="distribution.hero.body" />
             </Text>
           </Box>

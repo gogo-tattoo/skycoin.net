@@ -1,6 +1,6 @@
 import palx from 'palx';
 
-export const COUNTDOWN_TARGET = new Date('2017-08-01T04:00:00.000Z');
+export const COUNTDOWN_TARGET = new Date('2017-07-24T00:00:00.000Z');
 export const COLORS = palx('#4990e2');
 export const SPACE = [0, 4, 8, 12, 16, 20, 24, 32, 40, 48, 56, 64, 72];
 export const FONT_SIZES = [11, 13, 14, 15, 17, 20, 24, 28, 36, 40];
@@ -27,10 +27,10 @@ export const BOX_SHADOWS = {
 };
 
 export const FLAGS = {
-  announcement: false,
+  announcement: true,
   chinese: false,
   russian: true,
   timeline: false,
-  distribution: false,
+  distribution: true,
   network: false,
 };

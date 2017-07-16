@@ -1,6 +1,7 @@
 export default {
   header: {
     navigation: {
+      distribution: 'Distribution',
       whitepapers: 'Whitepapers',
       downloads: 'Downloads',
       explorer: 'Explorer',
@@ -17,10 +18,14 @@ export default {
     infographics: 'Infographics',
     whitepapers: 'Whitepapers',
     blockchain: 'Blockchain Explorer',
+    distribution: 'Distribution Event',
     blog: 'Blog',
     github: 'Github',
     telegram: 'Telegram',
     slack: 'Slack',
+  },
+  buyBanner: {
+    lead: 'Existing Skycoins are available separately on the following exchanges',
   },
   buy: {
     heading: 'Choose your preferred exchange to buy Skycoin',
@@ -47,7 +52,7 @@ export default {
         get: 'Get Wallet',
         blurb: 'Wallet allows you to hold and secure Skycoin.{break}It’s fast, secure, and free.',
       },
-      announcement: '',
+      announcement: 'On July 24, 1% (1 million) of Skycoin will be sold at a fixed price of 0.02 BTC / SKY.',
     },
     about: {
       heading: 'What is Skycoin?',
@@ -124,15 +129,15 @@ export default {
     title: 'Infographics',
   },
   distribution: {
-    title: 'Coin Distribution',
-    description: 'As coins aren’t mined, Skycoin distribution is unlike that of a standard token or asset. To ensure continued development in a project that will take many years to complete coins are released in a scheme similar to that of a standard company, with the first batches going to early developers and investors.',
+    title: 'Skycoin distribution event',
+    description: 'On July 24, 1% (1 million) of Skycoin will be sold at a fixed price of 0.02 BTC / SKY.',
     hero: {
-      heading: 'Coin Distribution',
-      lead: 'As coins aren’t mined, Skycoin distribution is unlike that of a standard token or asset. To ensure continued development in a project that will take many years to complete coins are released in a scheme similar to that of a standard company, with the first batches going to early developers and investors.',
-      body: 'Each week we will distribute <strong>XXX</strong> coins.',
+      heading: 'Skycoin distribution event',
+      lead: 'On July 24, 1% (1 million) of Skycoin will be sold at a fixed price of 0.02 BTC / SKY (500 SKY / BTC). This distribution event will stop on August 8 or when 1% (1 million) SKY sells out, whichever is sooner.',
+      body: 'Distribution will be available through the skycoin.net website or through a <a href="https://t.me/Skycoin" target="_blank">telegram bot.</a>',
     },
     countdown: {
-      heading: 'The next distribution will begin on <strong>1st of January, 1970</strong>.',
+      heading: 'The distribution event will begin on <strong>July 24</strong>.',
       days: 'Days',
       hours: 'Hours',
       minutes: 'Minutes',
