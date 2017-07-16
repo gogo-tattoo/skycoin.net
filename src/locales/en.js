@@ -137,7 +137,7 @@ export default {
       body: 'Distribution will be available through the skycoin.net website or through a <a href="https://t.me/Skycoin" target="_blank">telegram bot.</a>',
     },
     countdown: {
-      heading: 'The distribution event will begin on <strong>July 24</strong>.',
+      heading: 'The distribution event will begin on <strong>July 24</strong> at midnight GMT.',
       days: 'Days',
       hours: 'Hours',
       minutes: 'Minutes',
