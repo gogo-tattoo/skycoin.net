@@ -5,7 +5,6 @@ import { rem } from 'polished';
 import { FormattedMessage } from 'react-intl';
 import { Flag } from 'flag';
 
-import { COLORS } from 'config';
 import Text from 'components/Text';
 import Heading from 'components/Heading';
 import Button from 'components/Button';
