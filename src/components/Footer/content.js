@@ -26,7 +26,7 @@ export default [{
   heading: 'footer.community',
   links: [{
     label: 'footer.blog',
-    href: 'http://blog.skycoin.net/blog',
+    href: 'http://blog.skycoin.net',
   }, {
     label: 'footer.github',
     href: 'https://github.com/skycoin/skycoin',
