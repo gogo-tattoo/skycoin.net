@@ -50,7 +50,7 @@ export default {
       buy: 'Buy Skycoin',
       wallet: {
         get: 'Get Wallet',
-        blurb: 'Wallet allows you to hold and secure Skycoin.{break}It’s fast, secure, and free.',
+        blurb: 'Skycoin is driving the new internet revolution.{break}Fuel up now.',
       },
       announcement: 'On July 24, 1% (1 million) of Skycoin will be sold at a fixed price of 0.002 BTC / SKY.',
     },
@@ -87,7 +87,7 @@ export default {
     },
     roadmap: {
       heading: 'Roadmap',
-      blurb: 'Skycoin development can be followed on GitHub. We will be opening bounties for bug fixes, design and development in the coming months.',
+      blurb: 'Visit GitHub to follow or contribute to Skycoin’s continued development and deployment. We will be opening bounties for bug fixes, design and development in the coming months.',
       roadmapLink: 'See the full roadmap',
       community: 'To keep up to date with Skycoin’s latest developments or to start contributing, join Skycoin on Telegram.',
       communityLink: 'Join the community',
