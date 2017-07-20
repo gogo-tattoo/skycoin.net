@@ -133,7 +133,7 @@ export default {
     description: 'On July 24, 1% (1 million) of Skycoin will be sold at a fixed price of 0.002 BTC / SKY.',
     hero: {
       heading: 'Skycoin distribution event',
-      lead: 'On July 24, 1% (1 million) of Skycoin will be sold at a fixed price of 0.002 BTC / SKY (500 SKY / BTC). This distribution event will stop on August 8 or when 1% (1 million) SKY sells out, whichever is sooner.',
+      lead: 'On July 24, 1% (1 million) of Skycoin will be sold at a fixed price of 0.002 BTC / SKY (500 SKY / BTC). This distribution event will stop on August 31 or when 1% (1 million) SKY sells out, whichever is sooner.',
       body: 'Check back to skycoin.net to participate in the event.',
     },
     countdown: {
