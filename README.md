@@ -41,25 +41,26 @@ $ yarn test
 $ yarn test -- --coverage
 ```
 
-## Deploying to S3
+## Releasing to production
 
-1. Install and configure the AWS CLI:
+Commits on the master branch will be automatically released to [staging](staging.skycoin.net).
 
-  ```shell
-  $ brew install awscli
-  $ aws configure
-  ```
+To release to production:
 
-2. Create a static build:
+1. Bump the version number in `package.json`:
 
-  ```shell
-  $ yarn build
-  ```
+    ```diff
+       "name": "skycoin.net",
+    -  "version": "0.1.2",
+    +  "version": "0.1.3",
+       "private": true,
+    ```
+    
+2. Commit, create a tag, and push:
 
-3. Sync the build directory with the S3 bucket:
+    ```shell
+    $ git commit -am "chore: bump version number"
+    $ git tag v0.1.3
+    $ git push origin master --tags
+    ```
 
-  ```shell
-  $ aws s3 sync build/ s3://bucket-name --acl public-read
-  ```
-
-See [this blog post](https://medium.com/@omgwtfmarc/deploying-create-react-app-to-s3-or-cloudfront-48dae4ce0af) for bucket setup and detailed deployment instructions.
