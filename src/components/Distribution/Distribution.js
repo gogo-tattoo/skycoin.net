@@ -10,6 +10,7 @@ import BuyBanner from 'components/BuyBanner';
 import About from 'components/Home/components/About';
 import Roadmap from 'components/Home/components/Roadmap';
 import Hero from './components/Hero';
+import { eventInProgress } from './eventStatus';
 
 const Distribution = ({ intl }) => (
   <div>
@@ -22,7 +23,7 @@ const Distribution = ({ intl }) => (
     </Helmet>
     <Header />
     <Hero />
-    <BuyBanner />
+    {!eventInProgress && <BuyBanner />}
     <About />
     <Roadmap />
     <GetStarted />

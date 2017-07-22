@@ -4,9 +4,19 @@ import { Flex, Box } from 'grid-styled';
 import styled from 'styled-components';
 import { FormattedMessage, FormattedHTMLMessage } from 'react-intl';
 import { rem } from 'polished';
+import moment from 'moment';
 
 import media from 'utils/media';
-import { BOX_SHADOWS, BORDER_RADIUS, COLORS, SPACE, COUNTDOWN_TARGET } from 'config';
+import {
+  BOX_SHADOWS,
+  BORDER_RADIUS,
+  COLORS,
+  SPACE,
+  DISTRIBUTION_START,
+  DISTRIBUTION_END,
+} from 'config';
+import { eventInProgress } from 'components/Distribution/eventStatus';
+
 import Heading from 'components/Heading';
 import Text from 'components/Text';
 
@@ -64,7 +74,9 @@ export default class Countdown extends React.Component {
     super();
 
     this.state = {
-      secondsRemaining: COUNTDOWN_TARGET.getTime() - Date.now(),
+      secondsRemaining: eventInProgress
+        ? DISTRIBUTION_END.diff(moment())
+        : DISTRIBUTION_START.diff(moment()),
     };
   }
 
@@ -87,7 +99,7 @@ export default class Countdown extends React.Component {
   }
 
   render() {
-    const remaining = new Date(this.state.secondsRemaining);
+    const remaining = this.state.secondsRemaining;
 
     if (remaining < 0) {
       return null;
@@ -96,7 +108,17 @@ export default class Countdown extends React.Component {
     return (
       <Wrapper>
         <Text fontSize={[1, 4]} color="black" heavy mb={[5, 7]}>
-          <FormattedHTMLMessage id="distribution.countdown.heading" />
+          {eventInProgress ? (
+            <FormattedHTMLMessage
+              id="distribution.countdown.eventInProgress"
+              values={{ date: moment(DISTRIBUTION_END).format('LL') }}
+            />
+          ) : (
+            <FormattedHTMLMessage
+              id="distribution.countdown.preEvent"
+              values={{ date: moment(DISTRIBUTION_START).format('LL') }}
+            />
+          )}
         </Text>
 
         <Flex>

@@ -22,7 +22,7 @@ const BuyBanner = styled.div`
 export default () => (
   <BuyBanner>
     <Container>
-      <Text heavy black fontSize={3}>
+      <Text heavy color="black" fontSize={3}>
         <FormattedMessage id="buyBanner.lead" />
       </Text>
 

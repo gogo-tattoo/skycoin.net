@@ -52,7 +52,7 @@ export default {
         get: 'Get Wallet',
         blurb: 'Skycoin is driving the new internet revolution.{break}Fuel up now.',
       },
-      announcement: 'On July 24, 1% (1 million) of Skycoin will be sold at a fixed price of 0.002 BTC / SKY.',
+      announcement: 'On {date}, 1% (1 million) of Skycoin will be sold at a fixed price of 0.002 BTC / SKY.',
     },
     about: {
       heading: 'What is Skycoin?',
@@ -130,14 +130,16 @@ export default {
   },
   distribution: {
     title: 'Skycoin distribution event',
-    description: 'On July 24, 1% (1 million) of Skycoin will be sold at a fixed price of 0.002 BTC / SKY.',
+    description: 'On {date}, 1% (1 million) of Skycoin will be sold at a fixed price of 0.002 BTC / SKY.',
     hero: {
       heading: 'Skycoin distribution event',
-      lead: 'On July 24, 1% (1 million) of Skycoin will be sold at a fixed price of 0.002 BTC / SKY (500 SKY / BTC). This distribution event will stop on August 31 or when 1% (1 million) SKY sells out, whichever is sooner.',
-      body: 'Check back to skycoin.net to participate in the event.',
+      preEvent: 'On {begin}, 1% (1 million) of Skycoin will be sold at a fixed price of 0.002 BTC / SKY (500 SKY / BTC). This distribution event will stop on {end} or when 1% (1 million) SKY sells out, whichever is sooner.<br /><br />Check back to <a href="/distribution">skycoin.net/distribution</a> to participate in the event.',
+      postEvent: 'The Skycoin distribution event ended on {date}. Join the Skycoin community on Telegram to stay up to date on upcoming distribution events.',
+      participate: 'Participate',
     },
     countdown: {
-      heading: 'The distribution event will begin on <strong>July 24</strong> at noon GMT.',
+      preEvent: 'The distribution event will begin on <strong>{date}</strong> at noon GMT.',
+      eventInProgress: 'The distribution event will end on <strong>{date}</strong> at noon GMT.',
       days: 'Days',
       hours: 'Hours',
       minutes: 'Minutes',

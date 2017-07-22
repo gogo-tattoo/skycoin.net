@@ -130,14 +130,16 @@ export default {
   },
   distribution: {
     title: '天空币分发活动',
-    description: '在7月24,1%(1百万枚)的天空币将以0.002 BTC / SKY的固定价格出售.',
+    description: 'On {date}, 1% (1 million) of Skycoin will be sold at a fixed price of 0.002 BTC / SKY.',
     hero: {
-      heading: '天空币分发活动',
-      lead: '7月24日开始，总量1%（1百万枚）的天空币会以单价0.002BTC的价格售出（即1BTC=500SKY）。此次分发活动8月31日前一百万枚天空币售罄后即刻截止，若8月31日未售罄则8月31日截止。',
-      body: '回到skycoin.net参与分发活动。',
+      heading: 'Skycoin distribution event',
+      preEvent: 'On {begin}, 1% (1 million) of Skycoin will be sold at a fixed price of 0.002 BTC / SKY (500 SKY / BTC). This distribution event will stop on {end} or when 1% (1 million) SKY sells out, whichever is sooner.<br /><br />Check back to <a href="/distribution">skycoin.net/distribution</a> to participate in the event.',
+      postEvent: 'The Skycoin distribution event ended on {date}. Join the Skycoin community on Telegram to stay up to date on upcoming distribution events.',
+      participate: 'Participate',
     },
     countdown: {
-      heading: '北京时间<strong>7月24晚上8点</strong>开始发行',
+      preEvent: 'The distribution event will begin on <strong>{date}</strong> at noon GMT.',
+      eventInProgress: 'The distribution event will end on <strong>{date}</strong> at noon GMT.',
       days: '天',
       hours: '小时',
       minutes: '分钟',
