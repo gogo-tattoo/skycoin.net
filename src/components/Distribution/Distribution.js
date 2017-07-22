@@ -23,7 +23,7 @@ const Distribution = ({ intl }) => (
         content={intl.formatMessage({
           id: 'distribution.description',
         }, {
-          date: moment(DISTRIBUTION_START).format('LL'),
+          date: moment(DISTRIBUTION_START).locale(intl.locale).format('LL'),
         })}
       />
     </Helmet>
@@ -39,6 +39,7 @@ const Distribution = ({ intl }) => (
 
 Distribution.propTypes = {
   intl: PropTypes.shape({
+    locale: PropTypes.string,
     formatMessage: PropTypes.func.isRequired,
   }).isRequired,
 };

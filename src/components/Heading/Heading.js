@@ -7,7 +7,7 @@ import { FONT_FAMILIES } from 'config';
 const Heading = createComponentFromTagProp({
   tag: 'h2',
   prop: 'as',
-  propsToOmit: ['fontSize', 'color', 'mt', 'mb', 'my', 'heavy', 'caps'],
+  propsToOmit: ['fontSize', 'color', 'bg', 'mt', 'mb', 'my', 'heavy', 'caps'],
 });
 
 export default styled(Heading)`

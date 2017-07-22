@@ -1,11 +1,16 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Flex, Box } from 'grid-styled';
-import { FormattedMessage, FormattedHTMLMessage } from 'react-intl';
+import { FormattedMessage, FormattedHTMLMessage, injectIntl } from 'react-intl';
 import moment from 'moment';
 
 import { DISTRIBUTION_START, DISTRIBUTION_END } from 'config';
-import { preEvent, postEvent, eventInProgress } from 'components/Distribution/eventStatus';
+import {
+  preEvent,
+  postEvent,
+  eventInProgress,
+} from 'components/Distribution/eventStatus';
 import media from 'utils/media';
 import Container from 'components/Container';
 import Heading from 'components/Heading';
@@ -15,7 +20,7 @@ import Button from 'components/Button';
 import Countdown from '../Countdown';
 import background from './background.png';
 
-const Hero = styled.div`
+const Wrapper = styled.div`
   background:
     url(${background}) center center / cover,
     linear-gradient(-155deg, #686e96 0%, #373b5c 100%);
@@ -37,8 +42,8 @@ const StyledFlex = styled(Flex)`
   z-index: 1;
 `;
 
-export default () => (
-  <Hero>
+const Hero = ({ intl }) => (
+  <Wrapper>
     <StyledFlex column justify="center">
       <Container>
         <Flex wrap justify="center">
@@ -69,7 +74,9 @@ export default () => (
                 <FormattedHTMLMessage
                   id="distribution.hero.postEvent"
                   values={{
-                    date: moment(DISTRIBUTION_END).format('LL'),
+                    date: moment(DISTRIBUTION_END)
+                      .locale(intl.locale)
+                      .format('LL'),
                   }}
                 />
               </Text>
@@ -81,8 +88,12 @@ export default () => (
                   <FormattedHTMLMessage
                     id="distribution.hero.preEvent"
                     values={{
-                      begin: moment(DISTRIBUTION_START).format('LL'),
-                      end: moment(DISTRIBUTION_END).format('LL'),
+                      begin: moment(DISTRIBUTION_START)
+                        .locale(intl.locale)
+                        .format('LL'),
+                      end: moment(DISTRIBUTION_END)
+                        .locale(intl.locale)
+                        .format('LL'),
                     }}
                   />
                 </Text>
@@ -92,5 +103,13 @@ export default () => (
         </Flex>
       </Container>
     </StyledFlex>
-  </Hero>
+  </Wrapper>
 );
+
+Hero.propTypes = {
+  intl: PropTypes.shape({
+    locale: PropTypes.string,
+  }).isRequired,
+};
+
+export default injectIntl(Hero);

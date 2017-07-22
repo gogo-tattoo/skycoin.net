@@ -1,8 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import padStart from 'lodash/padStart';
 import { Flex, Box } from 'grid-styled';
 import styled from 'styled-components';
-import { FormattedMessage, FormattedHTMLMessage } from 'react-intl';
+import { FormattedMessage, FormattedHTMLMessage, injectIntl } from 'react-intl';
 import { rem } from 'polished';
 import moment from 'moment';
 
@@ -69,7 +70,7 @@ const Digit = styled(Heading).attrs({
   `}
 `;
 
-export default class Countdown extends React.Component {
+class Countdown extends React.Component {
   constructor() {
     super();
 
@@ -111,12 +112,20 @@ export default class Countdown extends React.Component {
           {eventInProgress ? (
             <FormattedHTMLMessage
               id="distribution.countdown.eventInProgress"
-              values={{ date: moment(DISTRIBUTION_END).format('LL') }}
+              values={{
+                date: moment(DISTRIBUTION_END)
+                  .locale(this.props.intl.locale)
+                  .format('LL'),
+              }}
             />
           ) : (
             <FormattedHTMLMessage
               id="distribution.countdown.preEvent"
-              values={{ date: moment(DISTRIBUTION_START).format('LL') }}
+              values={{
+                date: moment(DISTRIBUTION_START)
+                  .locale(this.props.intl.locale)
+                  .format('LL'),
+              }}
             />
           )}
         </Text>
@@ -127,7 +136,8 @@ export default class Countdown extends React.Component {
               <FormattedMessage id="distribution.countdown.days" />
             </Text>
 
-            {formatTime(getDays(remaining)).map(i => <Digit>{i}</Digit>)}
+            {formatTime(getDays(remaining))
+              .map((i, k) => <Digit key={k}>{i}</Digit>)}
           </Box>
 
           <Box width={1 / 4}>
@@ -135,7 +145,8 @@ export default class Countdown extends React.Component {
               <FormattedMessage id="distribution.countdown.hours" />
             </Text>
 
-            {formatTime(getHours(remaining)).map(i => <Digit>{i}</Digit>)}
+            {formatTime(getHours(remaining))
+              .map((i, k) => <Digit key={k}>{i}</Digit>)}
           </Box>
 
           <Box width={1 / 4}>
@@ -143,7 +154,8 @@ export default class Countdown extends React.Component {
               <FormattedMessage id="distribution.countdown.minutes" />
             </Text>
 
-            {formatTime(getMinutes(remaining)).map(i => <Digit>{i}</Digit>)}
+            {formatTime(getMinutes(remaining))
+              .map((i, k) => <Digit key={k}>{i}</Digit>)}
           </Box>
 
           <Box width={1 / 4}>
@@ -151,10 +163,19 @@ export default class Countdown extends React.Component {
               <FormattedMessage id="distribution.countdown.seconds" />
             </Text>
 
-            {formatTime(getSeconds(remaining)).map(i => <Digit>{i}</Digit>)}
+            {formatTime(getSeconds(remaining))
+              .map((i, k) => <Digit key={k}>{i}</Digit>)}
           </Box>
         </Flex>
       </Wrapper>
     );
   }
 }
+
+Countdown.propTypes = {
+  intl: PropTypes.shape({
+    locale: PropTypes.string,
+  }).isRequired,
+};
+
+export default injectIntl(Countdown);
