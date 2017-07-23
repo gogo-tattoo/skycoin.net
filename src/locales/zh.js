@@ -130,16 +130,16 @@ export default {
   },
   distribution: {
     title: '天空币分发活动',
-    description: 'On {date}, 1% (1 million) of Skycoin will be sold at a fixed price of 0.002 BTC / SKY.',
+    description: ' {date} 日, 1%(1百万枚)的天空币将以0.002 BTC / SKY的固定价格出售',
     hero: {
-      heading: 'Skycoin distribution event',
-      preEvent: 'On {begin}, 1% (1 million) of Skycoin will be sold at a fixed price of 0.002 BTC / SKY (500 SKY / BTC). This distribution event will stop on {end} or when 1% (1 million) SKY sells out, whichever is sooner.<br /><br />Check back to <a href="/distribution">skycoin.net/distribution</a> to participate in the event.',
-      postEvent: 'The Skycoin distribution event ended on {date}. Join the Skycoin community on Telegram to stay up to date on upcoming distribution events.',
-      participate: 'Participate',
+      heading: '天空币分发活动',
+      preEvent: '在{begin}, 1%(1百万枚)的天空币将以0.002 BTC / SKY的固定价格出售。 此次分发活动将在{end}或者一百万枚天空币售完后即截止<br /><br />回到<a href="/cn/distribution">skycoin.net/distribution</a>来参与天空币分发活动',
+      postEvent: '天空币分发活动在{date}终止,您可以加入天空币的Telegram社区来跟进新的币分发活动。',
+      participate: '参加',
     },
     countdown: {
-      preEvent: 'The distribution event will begin on <strong>{date}</strong> at noon GMT.',
-      eventInProgress: 'The distribution event will end on <strong>{date}</strong> at noon GMT.',
+      preEvent: '本次分发活动将在北京时间<strong>{date}</strong>晚上8点开始',
+      eventInProgress: '本次分发活动将在北京时间<strong>{date}</strong>晚上8点结束',
       days: '天',
       hours: '小时',
       minutes: '分钟',
