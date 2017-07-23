@@ -1,7 +1,7 @@
 import palx from 'palx';
 import moment from 'moment';
 
-export const DISTRIBUTION_START = moment('2017-07-24T12:00:00.000Z');
+export const DISTRIBUTION_START = moment('2017-08-08T12:00:00.000Z');
 export const DISTRIBUTION_END = moment('2017-08-31T12:00:00.000Z');
 export const COLORS = palx('#4990e2');
 export const SPACE = [0, 4, 8, 12, 16, 20, 24, 32, 40, 48, 56, 64, 72];
