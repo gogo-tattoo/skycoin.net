@@ -52,7 +52,7 @@ export default {
         get: '下载钱包',
         blurb: '天空币驱动着新一代互联网革命。{break}行动起来吧!',
       },
-      announcement: '7月24日,1%(1百万枚)的天空币将以0.002 BTC / SKY的固定价格出售',
+      announcement: '{date},1%(1百万枚)的天空币将以0.002 BTC / SKY的固定价格出售',
     },
     about: {
       heading: '什么是天空币?',
