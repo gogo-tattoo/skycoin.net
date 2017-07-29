@@ -29,11 +29,11 @@ const Wrapper = styled.div`
   text-align: center;
 
   ${media.sm.css`
-    height: ${postEvent ? '26rem' : '38rem'};
+    height: ${postEvent ? '26rem' : '42rem'};
   `}
 
   ${media.md.css`
-    height: ${postEvent ? '30rem' : '42rem'};
+    height: ${postEvent ? '30rem' : '46rem'};
   `}
 `;
 
