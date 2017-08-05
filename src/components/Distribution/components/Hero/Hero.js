@@ -50,7 +50,8 @@ const Hero = ({ intl }) => (
           <Box width={[1 / 1, 1 / 1, 2 / 3]} my={[5, 7]}>
             <Container>
               <Heading heavy as="h1" color="white" fontSize={[5, 7, 8]} mb={0}>
-                <FormattedMessage id="distribution.hero.heading" />
+                <FormattedMessage id="
+  ibution.hero.heading" />
               </Heading>
             </Container>
           </Box>
@@ -59,7 +60,7 @@ const Hero = ({ intl }) => (
             {!postEvent && <Countdown />}
 
             {eventInProgress && <Button
-              href="https://distribution.skycoin.net/"
+              href="https://event.skycoin.net/"
               color="violet.5"
               bg="white"
               big
