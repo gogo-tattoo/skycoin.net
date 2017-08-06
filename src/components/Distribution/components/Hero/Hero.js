@@ -50,7 +50,7 @@ const Hero = ({ intl }) => (
           <Box width={[1 / 1, 1 / 1, 2 / 3]} my={[5, 7]}>
             <Container>
               <Heading heavy as="h1" color="white" fontSize={[5, 7, 8]} mb={0}>
-                <FormattedMessage id="disibution.hero.heading" />
+                <FormattedMessage id="distribution.hero.heading" />
               </Heading>
             </Container>
           </Box>
