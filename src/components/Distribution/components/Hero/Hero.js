@@ -51,7 +51,8 @@ const Hero = ({ intl }) => (
             <Container>
               <Heading heavy as="h1" color="white" fontSize={[5, 7, 8]} mb={0}>
                 <FormattedMessage id="
-  ibution.hero.heading" />
+  ibution.hero.heading"
+                />
               </Heading>
             </Container>
           </Box>
