@@ -2,7 +2,7 @@ export default {
   header: {
     navigation: {
       distribution: 'Distribution',
-      distributionEvent: 'ICO event',
+      distributionEvent: 'Distribution event',
       whitepapers: 'Описания',
       downloads: 'Загрузки',
       explorer: 'Обозреватель',
@@ -32,7 +32,7 @@ export default {
     heading: 'Выбрать удобную вам биржу для покупки Skycoin',
     c2cx: 'Купить на C2CX',
     cryptopia: 'Купить на Cryptopia',
-    distributionEvent: 'ICO event',
+    distributionEvent: 'Distribution event',
   },
   notFound: {
     title: 'Страница не найдена',
@@ -56,8 +56,8 @@ export default {
       },
     },
     distributionEvent: {
-      heading: 'ICO event',
-      body: 'The Skycoin ICO event has started. 1% (1 million) of Skycoin will be sold at a fixed price of 0.002 BTC / SKY.',
+      heading: 'Distribution event',
+      body: 'The Skycoin distribution event has started. 1% (1 million) of Skycoin will be sold at a fixed price of 0.002 BTC / SKY.',
       participate: 'Participate',
     },
     about: {
@@ -135,17 +135,17 @@ export default {
     title: 'Инфографика',
   },
   distribution: {
-    title: 'Skycoin ICO event',
+    title: 'Skycoin distribution event',
     description: 'On {date}, 1% (1 million) of Skycoin will be sold at a fixed price of 0.002 BTC / SKY.',
     hero: {
-      heading: 'Skycoin ICO event',
-      preEvent: 'On {begin}, 1% (1 million) of Skycoin will be sold at a fixed price of 0.002 BTC / SKY (500 SKY / BTC). This ICO event will stop on {end} or when 1% (1 million) SKY sells out, whichever is sooner.<br /><br />Check back to <a href="/distribution">skycoin.net/distribution</a> to participate in the event.',
-      postEvent: 'The Skycoin ICO event ended on {date}. Join the Skycoin community on Telegram to stay up to date on upcoming ICO events.',
+      heading: 'Skycoin distribution event',
+      preEvent: 'On {begin}, 1% (1 million) of Skycoin will be sold at a fixed price of 0.002 BTC / SKY (500 SKY / BTC). This distribution event will stop on {end} or when 1% (1 million) SKY sells out, whichever is sooner.<br /><br />Check back to <a href="/distribution">skycoin.net/distribution</a> to participate in the event.',
+      postEvent: 'The Skycoin distribution event ended on {date}. Join the Skycoin community on Telegram to stay up to date on upcoming distribution events.',
       participate: 'Participate',
     },
     countdown: {
-      preEvent: 'The ICO event will begin on <strong>{date}</strong> at noon GMT.',
-      eventInProgress: 'The ICO event will end on <strong>{date}</strong> at noon GMT.',
+      preEvent: 'The distribution event will begin on <strong>{date}</strong> at noon GMT.',
+      eventInProgress: 'The distribution event will end on <strong>{date}</strong> at noon GMT.',
       days: 'Дней',
       hours: 'Часов',
       minutes: 'Минут',

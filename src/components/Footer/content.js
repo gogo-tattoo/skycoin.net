@@ -20,7 +20,7 @@ export default [{
     href: 'http://explorer.skycoin.net/blocks',
   }, {
     label: 'footer.distribution',
-    href: 'https://event.skycoin.net/',
+    to: 'distribution',
   }],
 }, {
   heading: 'footer.community',
