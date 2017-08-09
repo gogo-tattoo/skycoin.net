@@ -6,6 +6,7 @@ import { injectIntl } from 'react-intl';
 import GetStarted from 'components/GetStarted';
 import Footer from 'components/Footer';
 import Hero from './components/Hero';
+import DistributionEvent from './components/DistributionEvent';
 import About from './components/About';
 import Network from './components/Network';
 import Miner from './components/Miner';
@@ -23,6 +24,7 @@ const Home = ({ intl }) => (
     </Helmet>
 
     <Hero />
+    <DistributionEvent />
     <About />
     <Network />
     <Miner />

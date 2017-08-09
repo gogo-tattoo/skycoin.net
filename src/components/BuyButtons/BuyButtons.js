@@ -3,6 +3,7 @@ import { FormattedMessage } from 'react-intl';
 import { Box } from 'grid-styled';
 
 import Button from '../Button';
+import { eventInProgress } from '../Distribution/eventStatus';
 
 const EXCHANGES = [{
   name: 'buy.c2cx',
@@ -16,9 +17,20 @@ const EXCHANGES = [{
 
 export default () => (
   <Box mx={-1}>
+    {eventInProgress && <Button
+      href="https://event.skycoin.net/"
+      m={1}
+      color="white"
+      bg="base"
+      fontSize={[1, 3]}
+      target="_blank"
+      width={[1 / 1, 'auto']}
+    >
+      <FormattedMessage id="buy.distributionEvent" />
+    </Button>}
+
     {EXCHANGES.map(({ name, color, url }, i) => (
       <Button
-        big
         key={i}
         href={url}
         m={1}

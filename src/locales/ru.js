@@ -2,6 +2,7 @@ export default {
   header: {
     navigation: {
       distribution: 'Distribution',
+      distributionEvent: 'Distribution event',
       whitepapers: 'Описания',
       downloads: 'Загрузки',
       explorer: 'Обозреватель',
@@ -18,7 +19,7 @@ export default {
     infographics: 'Инфографика',
     whitepapers: 'Описания',
     blockchain: 'Блокчейн Обозреватель',
-    distribution: 'Distribution Event',
+    distribution: 'Distribution',
     blog: 'Blog',
     github: 'Github',
     telegram: 'Telegram',
@@ -31,6 +32,7 @@ export default {
     heading: 'Выбрать удобную вам биржу для покупки Skycoin',
     c2cx: 'Купить на C2CX',
     cryptopia: 'Купить на Cryptopia',
+    distributionEvent: 'Distribution event',
   },
   notFound: {
     title: 'Страница не найдена',
@@ -52,7 +54,11 @@ export default {
         get: 'Получить Кошелёк',
         blurb: 'Кошелёк позволит вам держать в безопасности ваши Skycoin.{break}Он быстр, безопасен и бесплатен.',
       },
-      announcement: 'On July 24, 1% (1 million) of Skycoin will be sold at a fixed price of 0.002 BTC / SKY.',
+    },
+    distributionEvent: {
+      heading: 'Distribution event',
+      body: 'The Skycoin distribution event has started. 1% (1 million) of Skycoin will be sold at a fixed price of 0.002 BTC / SKY.',
+      participate: 'Participate',
     },
     about: {
       heading: 'Что такое Skycoin?',

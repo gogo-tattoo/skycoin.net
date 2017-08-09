@@ -2,6 +2,7 @@ export default {
   header: {
     navigation: {
       distribution: 'Distribution',
+      distributionEvent: 'Distribution event',
       whitepapers: 'Whitepapers',
       downloads: 'Downloads',
       explorer: 'Explorer',
@@ -18,7 +19,7 @@ export default {
     infographics: 'Infographics',
     whitepapers: 'Whitepapers',
     blockchain: 'Blockchain Explorer',
-    distribution: 'Distribution Event',
+    distribution: 'Distribution',
     blog: 'Blog',
     github: 'Github',
     telegram: 'Telegram',
@@ -31,6 +32,7 @@ export default {
     heading: 'Choose your preferred exchange to buy Skycoin',
     c2cx: 'Buy on C2CX',
     cryptopia: 'Buy on Cryptopia',
+    distributionEvent: 'Distribution event',
   },
   notFound: {
     title: 'Page not found',
@@ -52,7 +54,11 @@ export default {
         get: 'Get Wallet',
         blurb: 'Skycoin is driving the new internet revolution.{break}Fuel up now.',
       },
-      announcement: 'On {date}, 1% (1 million) of Skycoin will be sold at a fixed price of 0.002 BTC / SKY.',
+    },
+    distributionEvent: {
+      heading: 'Distribution event',
+      body: 'The Skycoin distribution event has started. 1% (1 million) of Skycoin will be sold at a fixed price of 0.002 BTC / SKY.',
+      participate: 'Participate',
     },
     about: {
       heading: 'What is Skycoin?',

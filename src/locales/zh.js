@@ -2,6 +2,7 @@ export default {
   header: {
     navigation: {
       distribution: '币分发',
+      distributionEvent: 'Distribution event',
       whitepapers: '白皮书',
       downloads: '下载区',
       explorer: '区块浏览器',
@@ -18,7 +19,7 @@ export default {
     infographics: '信息图表',
     whitepapers: '白皮书',
     blockchain: '区块浏览器',
-    distribution: '分发活动',
+    distribution: '币分发',
     blog: '开发日志',
     github: 'Github',
     telegram: 'Telegram',
@@ -31,6 +32,7 @@ export default {
     heading: '选择以下交易所购买天空币',
     c2cx: '前往C2CX购买',
     cryptopia: '前往Cryptopia购买',
+    distributionEvent: 'Distribution event',
   },
   notFound: {
     title: '页面没有找到',
@@ -52,7 +54,11 @@ export default {
         get: '下载钱包',
         blurb: '天空币驱动着新一代互联网革命。{break}行动起来吧!',
       },
-      announcement: '{date},1%(1百万枚)的天空币将以0.002 BTC / SKY的固定价格出售',
+    },
+    distributionEvent: {
+      heading: 'Distribution event',
+      body: 'The Skycoin distribution event has started. 1% (1 million) of Skycoin will be sold at a fixed price of 0.002 BTC / SKY.',
+      participate: 'Participate',
     },
     about: {
       heading: '什么是天空币?',
