@@ -2,7 +2,7 @@ export default {
   header: {
     navigation: {
       distribution: '币分发',
-      distributionEvent: 'Distribution event',
+      distributionEvent: 'ICO event',
       whitepapers: '白皮书',
       downloads: '下载区',
       explorer: '区块浏览器',
@@ -32,7 +32,7 @@ export default {
     heading: '选择以下交易所购买天空币',
     c2cx: '前往C2CX购买',
     cryptopia: '前往Cryptopia购买',
-    distributionEvent: 'Distribution event',
+    distributionEvent: 'ICO event',
   },
   notFound: {
     title: '页面没有找到',
@@ -56,8 +56,8 @@ export default {
       },
     },
     distributionEvent: {
-      heading: 'Distribution event',
-      body: 'The Skycoin distribution event has started. 1% (1 million) of Skycoin will be sold at a fixed price of 0.002 BTC / SKY.',
+      heading: 'ICO event',
+      body: 'The Skycoin ICO event has started. 1% (1 million) of Skycoin will be sold at a fixed price of 0.002 BTC / SKY.',
       participate: 'Participate',
     },
     about: {

@@ -1,8 +1,7 @@
 export default {
   header: {
     navigation: {
-      distribution: 'Distribution',
-      distributionEvent: 'Distribution event',
+      distributionEvent: 'ICO event',
       whitepapers: 'Whitepapers',
       downloads: 'Downloads',
       explorer: 'Explorer',
@@ -19,7 +18,7 @@ export default {
     infographics: 'Infographics',
     whitepapers: 'Whitepapers',
     blockchain: 'Blockchain Explorer',
-    distribution: 'Distribution',
+    distribution: 'ICO event',
     blog: 'Blog',
     github: 'Github',
     telegram: 'Telegram',
@@ -32,7 +31,7 @@ export default {
     heading: 'Choose your preferred exchange to buy Skycoin',
     c2cx: 'Buy on C2CX',
     cryptopia: 'Buy on Cryptopia',
-    distributionEvent: 'Distribution event',
+    distributionEvent: 'ICO event',
   },
   notFound: {
     title: 'Page not found',
@@ -56,8 +55,8 @@ export default {
       },
     },
     distributionEvent: {
-      heading: 'Distribution event',
-      body: 'The Skycoin distribution event has started. 1% (1 million) of Skycoin will be sold at a fixed price of 0.002 BTC / SKY.',
+      heading: 'ICO event',
+      body: 'The Skycoin ICO event has started. 1% (1 million) of Skycoin will be sold at a fixed price of 0.002 BTC / SKY.',
       participate: 'Participate',
     },
     about: {
@@ -135,17 +134,17 @@ export default {
     title: 'Infographics',
   },
   distribution: {
-    title: 'Skycoin distribution event',
+    title: 'Skycoin ICO event',
     description: 'On {date}, 1% (1 million) of Skycoin will be sold at a fixed price of 0.002 BTC / SKY.',
     hero: {
-      heading: 'Skycoin distribution event',
+      heading: 'Skycoin ICO event',
       preEvent: 'On {begin}, 1% (1 million) of Skycoin will be sold at a fixed price of 0.002 BTC / SKY (500 SKY / BTC). This distribution event will stop on {end} or when 1% (1 million) SKY sells out, whichever is sooner.<br /><br />Check back to <a href="/distribution">skycoin.net/distribution</a> to participate in the event.<br /><br /><em>This event was originally scheduled for July 24, 2017 but has been rescheduled to August 8, 2017 due to uncertainty in the Bitcoin network during this time period.</em>',
-      postEvent: 'The Skycoin distribution event ended on {date}. Join the Skycoin community on Telegram to stay up to date on upcoming distribution events.',
+      postEvent: 'The Skycoin ICO event ended on {date}. Join the Skycoin community on Telegram to stay up to date on upcoming distribution events.',
       participate: 'Participate',
     },
     countdown: {
-      preEvent: 'The distribution event will begin on <strong>{date}</strong> at noon GMT.',
-      eventInProgress: 'The distribution event will end on <strong>{date}</strong> at noon GMT.',
+      preEvent: 'The ICO event will begin on <strong>{date}</strong> at noon GMT.',
+      eventInProgress: 'The ICO event will end on <strong>{date}</strong> at noon GMT.',
       days: 'Days',
       hours: 'Hours',
       minutes: 'Minutes',
