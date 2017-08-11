@@ -1,6 +1,6 @@
 {
   "name": "skycoin.net",
-  "version": "0.1.13",
+  "version": "0.2.0",
   "private": true,
   "dependencies": {
     "flag": "^2.0.2",
