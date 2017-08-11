@@ -7,7 +7,6 @@ import Hide from 'hidden-styled';
 
 import { SPACE, FONT_SIZES, FONT_FAMILIES, COLORS } from 'config';
 import { eventInProgress } from 'components/Distribution/eventStatus';
-import Button from 'components/Button';
 import Link from 'components/Link';
 import Buy from 'components/Buy';
 import media from 'utils/media';
@@ -69,20 +68,15 @@ const Navigation = ({ white }) => (
     </StyledLink>
 
     <InlineHide xs sm>
-      {eventInProgress ? (
-        <Button
-          pill
-          outlined
-          href="https://event.skycoin.net/"
-          color={white ? 'white' : 'base'}
-        >
-          <FormattedMessage id="header.navigation.distributionEvent" /> &rarr;
-        </Button>
-      ) : (
-        <Buy color={white ? 'white' : 'base'} pill outlined>
+      <Buy color={white ? 'white' : 'base'} pill outlined>
+        {eventInProgress ? (
+          <span>
+            <FormattedMessage id="header.navigation.distributionEvent" /> &rarr;
+          </span>
+        ) : (
           <FormattedMessage id="header.navigation.buy" />
-        </Buy>
-      )}
+        )}
+      </Buy>
     </InlineHide>
   </Wrapper>
 );

@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { FormattedMessage } from 'react-intl';
 
+import { eventInProgress } from 'components/Distribution/eventStatus';
 import Button from '../Button';
 import BuyButtons from '../BuyButtons';
 import Modal, { styles } from '../Modal';
@@ -36,9 +37,15 @@ class Buy extends React.Component {
     const { asAnchor, ...rest } = this.props;
     const Component = asAnchor ? 'a' : Button;
 
+    const props = eventInProgress ? {
+      href: 'https://event.skycoin.net/',
+    } : {
+      onClick: this.openModal,
+    };
+
     return (
       <Wrapper>
-        <Component onClick={this.openModal} {...rest} />
+        <Component {...props} {...rest} />
         <Modal
           contentLabel="Buy Skycoin"
           style={styles}
