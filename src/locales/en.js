@@ -21,6 +21,8 @@ export default {
     blockchain: 'Blockchain Explorer',
     distribution: 'Distribution',
     blog: 'Blog',
+    twitter: 'Twitter',
+    reddit: 'Reddit',
     github: 'Github',
     telegram: 'Telegram',
     slack: 'Slack',

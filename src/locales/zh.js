@@ -21,6 +21,8 @@ export default {
     blockchain: '区块浏览器',
     distribution: '币分发',
     blog: '开发日志',
+    twitter: 'Twitter',
+    reddit: 'Reddit',
     github: 'Github',
     telegram: 'Telegram',
     slack: 'Slack',
