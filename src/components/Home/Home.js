@@ -12,6 +12,7 @@ import Network from './components/Network';
 import Miner from './components/Miner';
 import Features from './components/Features';
 import Roadmap from './components/Roadmap';
+import Logos from './components/Logos';
 
 const Home = ({ intl }) => (
   <div>
@@ -30,6 +31,7 @@ const Home = ({ intl }) => (
     <Miner />
     <Roadmap />
     <Features />
+    <Logos />
     <GetStarted />
     <Footer />
   </div>
