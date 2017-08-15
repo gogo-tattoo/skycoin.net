@@ -80,7 +80,7 @@ export default {
       },
       ecosystem: {
         heading: 'Ecosystem',
-        body: 'We’re building a rich ecosystem of real world applications on top of Skycoin starting with messaging, social media, and VPN.',
+        body: 'We’re building an ecosystem of real world applications on top of Skycoin starting with messaging, social media, and VPN.',
       },
     },
     network: {
