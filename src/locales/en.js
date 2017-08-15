@@ -85,8 +85,8 @@ export default {
     },
     network: {
       label: 'Digging deeper',
-      heading: 'Revolutionary new consensus algorithms',
-      body: 'Satoshi originally intended the control of the Bitcoin network to be decentralized over hundreds of thousands of computers. Today, the Bitcoin network  is completely controlled by three mining pools. Bitcoin is no longer decentralized. Skycoin\'s consensus algorithm is designed to achieve true decentralization of blockchain consensus.',
+      heading: 'Revolutionary new consensus algorithm',
+      body: '"Satoshi originally intended the Bitcoin network to be decentralized, over hundreds of thousands of computers. Today, the Bitcoin network  is completely controlled by three mining pools. Bitcoin is no longer decentralized. Skycoin\'s consensus algorithm is designed to achieve true decentralization of blockchain consensus.',
       link: 'Learn about Network Consensus',
     },
     miner: {
