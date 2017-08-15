@@ -54,7 +54,7 @@ export default {
       buy: 'Buy Skycoin',
       wallet: {
         get: 'Get Wallet',
-        blurb: 'Skycoin is driving the new internet revolution.{break}Fuel up now.',
+        blurb: 'Skycoin is driving the new internet revolution.',
       },
     },
     distributionEvent: {
