@@ -1,8 +1,8 @@
 export default {
   header: {
     navigation: {
-      distribution: 'Distribution',
-      distributionEvent: 'Distribution event',
+      distribution: 'Распространение',
+      distributionEvent: 'Распространение Skycoin',
       whitepapers: 'Описания',
       downloads: 'Загрузки',
       explorer: 'Обозреватель',
@@ -19,7 +19,7 @@ export default {
     infographics: 'Инфографика',
     whitepapers: 'Описания',
     blockchain: 'Блокчейн Обозреватель',
-    distribution: 'Distribution',
+    distribution: 'Распространение',
     blog: 'Blog',
     twitter: 'Twitter',
     reddit: 'Reddit',
@@ -28,13 +28,13 @@ export default {
     slack: 'Slack',
   },
   buyBanner: {
-    lead: 'Existing Skycoins are available separately on the following exchanges',
+    lead: 'Существующие Skycoin доступны на следующих биржах',
   },
   buy: {
-    heading: 'Выбрать удобную вам биржу для покупки Skycoin',
+    heading: 'Выберите удобную вам биржу для покупки Skycoin',
     c2cx: 'Купить на C2CX',
     cryptopia: 'Купить на Cryptopia',
-    distributionEvent: 'Distribution event',
+    distributionEvent: 'Распространение',
   },
   notFound: {
     title: 'Страница не найдена',
@@ -48,7 +48,7 @@ export default {
   },
   home: {
     title: 'Основы нового интернета',
-    description: 'Skycoin спроектирован как воплощение оригинальных идей Сатоши и для преодоления проблем Bitcoin.',
+    description: 'Skycoin спроектирован как воплощение оригинальных идей Сатоши и для преодоления проблем с которыми сталкнулся Bitcoin.',
     hero: {
       heading: 'Основы{break}нового интернета.',
       buy: 'Купить Skycoin',
@@ -58,13 +58,13 @@ export default {
       },
     },
     distributionEvent: {
-      heading: 'Distribution event',
-      body: 'The Skycoin distribution event has started. 1% (1 million) of Skycoin will be sold at a fixed price of 0.002 BTC / SKY.',
-      participate: 'Participate',
+      heading: 'Распространение',
+      body: 'Распространение Skycoin началось. 1% (1 млн) от существующих Skycoin можно приобрести по фиксированной цене 0,002 BTC = 1 SKY.',
+      participate: 'Участвовать',
     },
     about: {
       heading: 'Что такое Skycoin?',
-      lead: 'Skycoin спроектирован как воплощение оригинальных идей Сатоши и для преодоления проблем Bitcoin.',
+      lead: 'Skycoin спроектирован как воплощение оригинальных идей Сатоши и для преодоления проблем с которыми сталкнулся Bitcoin.',
       whitepaper: 'Описания',
       speed: {
         heading: 'Скорость',
@@ -119,7 +119,7 @@ export default {
     wallet: {
       heading: 'Кошелёк',
       lead: 'Для простейшего использования скачайте the Desktop кошелёк. Для продвинутого использования или медленных соединений кошелёк для командной строки (CLI) предоставляет интерфейс, доступный прямо в вашем браузере.',
-      build: 'The current build is {version}.',
+      build: 'Версия: {version}.',
       macos: 'MacOS',
       linux: 'Linux',
       windows: 'Windows',
@@ -137,17 +137,17 @@ export default {
     title: 'Инфографика',
   },
   distribution: {
-    title: 'Skycoin distribution event',
-    description: 'On {date}, 1% (1 million) of Skycoin will be sold at a fixed price of 0.002 BTC / SKY.',
+    title: 'Распространение Skycoin',
+    description: 'Начиная с {date}, 1% (1 млн) от всех Skycoin распространяется по фиксированой цене 0.002 BTC / SKY.',
     hero: {
-      heading: 'Skycoin distribution event',
-      preEvent: 'On {begin}, 1% (1 million) of Skycoin will be sold at a fixed price of 0.002 BTC / SKY (500 SKY / BTC). This distribution event will stop on {end} or when 1% (1 million) SKY sells out, whichever is sooner.<br /><br />Check back to <a href="/distribution">skycoin.net/distribution</a> to participate in the event.',
-      postEvent: 'The Skycoin distribution event ended on {date}. Join the Skycoin community on Telegram to stay up to date on upcoming distribution events.',
+      heading: 'Распространение Skycoin',
+      preEvent: 'Начиная с {begin}, 1% (1 млн) от всех Skycoin распространяется по фиксированой цене 0.002 BTC / SKY (500 SKY / BTC). Распространение закончится {end} или как только 1% (1 млн) SKY будет распродан.<br /><br />Зайдите на <a href="/distribution">skycoin.net/distribution</a> для участия.',
+      postEvent: 'Распространение Skycoin закончилось {date}. Присоединяйтесь к Skycoin сообществу на Telegram, где всегда можно ознакомиться с самыми актуальными новостями по проекту.',
       participate: 'Participate',
     },
     countdown: {
-      preEvent: 'The distribution event will begin on <strong>{date}</strong> at noon GMT.',
-      eventInProgress: 'The distribution event will end on <strong>{date}</strong> at noon GMT.',
+      preEvent: 'Распространение начнётся <strong>{date}</strong>.',
+      eventInProgress: 'Распространение закончится <strong>{date}</strong>.',
       days: 'Дней',
       hours: 'Часов',
       minutes: 'Минут',
